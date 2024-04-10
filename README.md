@@ -9,9 +9,7 @@ module.exports = {
   async execute(interaction, client) {
     const Readme = new ReadmeBuilder()
       .setTitle(`Hello I am Driver 👋`)
-      .setDescription(
-        `Here are some facts about me`
-      )
+      .setDescription(`Here are some facts about me`)
       .setFields(
         [
           {
