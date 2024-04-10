@@ -38,6 +38,11 @@ module.exports = {
   },
 };
 ```
-| <a href="https://github.com/Sdriver"><img align="center" src="https://github-readme-stats.vercel.app/api?username=Sdriver1&show_icons=true&theme=dark" alt="Sdriver1's github stats" /></a> | <a href="https://github.com/sdriver1"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sdriver1&layout=compact" /></a> |
-| ------------- | ------------- |
 
+
+<a href="https://github.com/sdriver1">
+  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=Sdriver1&show_icons=true&theme=dark" />
+</a>
+<a href="https://github.com/sdriver1">
+  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sdriver1&layout=compact" />
+</a>
