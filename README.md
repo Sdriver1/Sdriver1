@@ -18,7 +18,7 @@ module.exports = {
           },
           {
             name: `Languages`,
-            value: `Javascript | HTML & CSS | Learning: Python and SQL`,
+            value: `Javascript | HTML & CSS | Learning: Python and Java`,
           },
           {
             name: `Projects`,
