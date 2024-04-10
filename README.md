@@ -41,3 +41,4 @@ module.exports = {
 
 ## My Stats
 ![](https://github-readme-stats.vercel.app/api?username=Sdriver1&show_icons=true&theme=dark)
+![](https://github-readme-stats.vercel.app/api/top-langs/?Sdriver1=anuraghazra&layout=compact)
