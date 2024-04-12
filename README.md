@@ -41,8 +41,8 @@ module.exports = {
 
 
 <a href="https://github.com/sdriver1">
-  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=Sdriver1&show_icons=true&theme=dark" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Sdriver1&show_icons=true&theme=dark" />
 </a>
 <a href="https://github.com/sdriver1">
-  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sdriver1&layout=compact" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sdriver1&layout=compact" />
 </a>
