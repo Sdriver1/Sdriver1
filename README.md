@@ -3,7 +3,7 @@ const { ReadmeBuilder, ReadmeContentBuilder } = require("Github.js")
 
 module.exports = {
   data: new ReadmeContentBuilder()
-    .setName("driver")
+    .setName("whoisdriver")
     .setDescription("Info on Sdriver1"),
 
   async execute(interaction, client) {
@@ -14,7 +14,7 @@ module.exports = {
         [
           {
             name: `Who is Driver`,
-            value: `16 years | Male, He/Him | Pansexual, Omniromantic | NY, USA `,
+            value: `16 years | Male, He/Him | Pansexual, Omniromantic | NY, USA | Taken 💖`,
           },
           {
             name: `Languages`,
@@ -22,7 +22,7 @@ module.exports = {
           },
           {
             name: `Projects`,
-            value: `Pridebot - Verified Discord bot, 310+ servers \nPridebot.xyz - Website for Pridebot`,
+            value: `Pridebot - Verified Discord bot, 350+ servers \n Pridebot.xyz - Website for Pridebot`,
           },
           {
             name: `Socials`,
@@ -30,7 +30,7 @@ module.exports = {
           }
         ]
       );
-      .setColor("#FF00EA")
+      .setColor("#FF00EA") // Favorite color
       .setThumbnail("https://cdn.discordapp.com/avatars/691506668781174824/87d37bb9de7440f4f47456be7b262664.png")
       .setTimestamp();
 
