@@ -22,7 +22,7 @@ module.exports = {
           },
           {
             name: `Projects`,
-            value: `Pridebot - Verified Discord bot, 350+ servers \n Pridebot.xyz - Website for Pridebot`,
+            value: `Pridebot - Verified Discord bot, 370+ servers \n Pridebot.xyz - Website for Pridebot`,
           },
           {
             name: `Socials`,
