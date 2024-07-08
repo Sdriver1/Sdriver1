@@ -17,7 +17,6 @@ module.exports = {
           value: `- 16 years 
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - NY, USA 
                   - Taken 💖 ~ 11/04/24`,
         },
         {
@@ -36,11 +35,11 @@ module.exports = {
           value: `- Followers:    4
                   - Total Repos:  8
                   - Stars:        4
-                  - Commits:      290`,
+                  - Commits:      263`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 747 servers 
+          value: `- Pridebot - Verified Discord bot, 760 servers 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)`,
         },
         {
