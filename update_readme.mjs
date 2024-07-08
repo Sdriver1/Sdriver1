@@ -171,7 +171,6 @@ module.exports = {
           value: \`- 16 years 
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - NY, USA 
                   - Taken 💖 ~ 11/04/24\`,
         },
         {
