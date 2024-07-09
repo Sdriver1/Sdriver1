@@ -35,11 +35,11 @@ module.exports = {
           value: `- Followers:    4
                   - Total Repos:  8
                   - Stars:        4
-                  - Commits:      269`,
+                  - Commits:      270`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 761 servers 
+          value: `- Pridebot - Verified Discord bot, 769 servers 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)`,
         },
         {
