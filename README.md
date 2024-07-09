@@ -17,29 +17,29 @@ module.exports = {
           value: `- 16 years 
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/24`,
+                  - Taken 💖 ~ 11/04/23`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (48.34%)
-                  - TypeScript (28.48%)
-                  - HTML       (14.90%)
-                  - CSS        (3.49%)
-                  - Java       (2.47%)
-                  - Python     (2.04%)
+          value: `- JavaScript (48.44%)
+                  - TypeScript (28.09%)
+                  - HTML       (14.69%)
+                  - CSS        (3.44%)
+                  - Python     (2.63%)
+                  - Java       (2.44%)
                   - Rust       (0.25%)
                   - Shell      (0.02%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    4
-                  - Total Repos:  8
+                  - Total Repos:  9
                   - Stars:        4
-                  - Commits:      270`,
+                  - Commits:      275`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 769 servers 
+          value: `- Pridebot - Verified Discord bot, 773 servers 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)`,
         },
         {
@@ -49,14 +49,13 @@ module.exports = {
         },
         {
           name: `Servers`,
-          value: ` *coming soon* `,
+          value: `- Pridetopia - *coming soon*`,
         },
         {
           name: `Socials`,
           value: `- Discord - @sdriver1
                   - Tiktok - @sdriver75
-                  - Insta - @sdriver_1
-                  - X/Twitter - @Sdriver110`,
+                  - Insta - @sdriver_1`,
         },
       ])
       .setColor("#FF00EA") // Favorite color
