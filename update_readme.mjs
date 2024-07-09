@@ -170,7 +170,7 @@ module.exports = {
           value: \`- 16 years 
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/24\`,
+                  - Taken 💖 ~ 11/04/23\`,
         },
         {
           name: \`Languages\`,
@@ -195,14 +195,13 @@ module.exports = {
         },
         {
           name: \`Servers\`,
-          value: \` *coming soon* \`,
+          value: \`- Pridetopia - *coming soon*\`,
         },
         {
           name: \`Socials\`,
           value: \`- Discord - @sdriver1
                   - Tiktok - @sdriver75
-                  - Insta - @sdriver_1
-                  - X/Twitter - @Sdriver110\`,
+                  - Insta - @sdriver_1\`,
         },
       ])
       .setColor("#FF00EA") // Favorite color
