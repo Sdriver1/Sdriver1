@@ -32,14 +32,14 @@ module.exports = {
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    4
+          value: `- Followers:    5
                   - Total Repos:  9
                   - Stars:        4
-                  - Commits:      284`,
+                  - Commits:      285`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 781 servers 
+          value: `- Pridebot - Verified Discord bot, 785 servers 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)`,
         },
         {
