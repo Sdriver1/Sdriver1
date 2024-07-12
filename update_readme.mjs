@@ -89,6 +89,9 @@ async function getGitHubStats(username) {
     let stars = 0;
     let commits = 0;
     for (const repo of repos) {
+      if (repo.name === "Sdriver1") {
+        continue;
+      }
       const stargazers = await octokit.activity.listStargazersForRepo({
         owner: username,
         repo: repo.name,
