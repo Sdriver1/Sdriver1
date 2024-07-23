@@ -21,21 +21,22 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (43.69%)
-                  - TypeScript (23.83%)
-                  - HTML       (22.34%)
+          value: `- JavaScript (43.65%)
+                  - TypeScript (23.81%)
+                  - HTML       (22.32%)
                   - CSS        (5.61%)
                   - Python     (2.23%)
                   - Java       (2.07%)
                   - Rust       (0.21%)
+                  - Perl       (0.09%)
                   - Shell      (0.02%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    5
-                  - Total Repos:  11
+                  - Total Repos:  12
                   - Stars:        4
-                  - Commits:      285`,
+                  - Commits:      287`,
         },
         {
           name: `Bot Development`,
