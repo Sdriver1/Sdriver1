@@ -128,10 +128,27 @@ async function getGitHubStats(username) {
   }
 }
 
+async function getBotStats() {
+  try {
+    const response = await fetch("https://api.pridebot.xyz/api/stats");
+    const data = await response.json();
+
+    return {
+      currentGuildCount: data.currentGuildCount,
+    };
+  } catch (error) {
+    console.error("Error fetching bot stats:", error);
+    return {
+      currentGuildCount: 0,
+    };
+  }
+}
+
 async function updateReadme() {
   const username = "Sdriver1";
   const languages = await getLanguageStats(username);
   const stats = await getGitHubStats(username);
+  const botStats = await getBotStats();
 
   const languagesString = languages
     .map((lang) => `- ${lang.language.padEnd(10)} (${lang.percentage}%)`)
@@ -171,7 +188,7 @@ module.exports = {
         },
         {
           name: \`Bot Development\`,
-          value: \`- Pridebot - Verified Discord bot, 910+ servers 
+          value: \`- Pridebot - Verified Discord bot, ${botStats.currentGuildCount} servers 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)\`,
         },
         {
