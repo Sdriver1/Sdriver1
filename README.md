@@ -21,14 +21,14 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (45.09%)
-                  - TypeScript (23.18%)
-                  - HTML       (20.62%)
-                  - CSS        (5.46%)
-                  - Python     (3.33%)
-                  - Java       (2.01%)
-                  - Rust       (0.21%)
-                  - Perl       (0.09%)
+          value: `- JavaScript (44.65%)
+                  - TypeScript (22.92%)
+                  - HTML       (20.38%)
+                  - CSS        (5.40%)
+                  - Python     (3.29%)
+                  - Java       (1.99%)
+                  - Perl       (1.15%)
+                  - Rust       (0.20%)
                   - Shell      (0.02%)`,
         },
         {
@@ -36,12 +36,12 @@ module.exports = {
           value: `- Followers:    5
                   - Total Repos:  11
                   - Stars:        4
-                  - Commits:      301`,
+                  - Commits:      304`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 938 servers 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)`,
+          value: `- Pridebot - Verified Discord bot, 939 servers / 151.7k+ users 
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.4k+ members`,
         },
         {
           name: `Websites`,
@@ -50,7 +50,7 @@ module.exports = {
         },
         {
           name: `Servers`,
-          value: `- Pridetopia - *coming soon*`,
+          value: `- Corecord Gardens - *coming soon*`,
         },
         {
           name: `Socials`,
@@ -60,7 +60,7 @@ module.exports = {
         },
       ])
       .setColor("#FF00EA") // Favorite color
-      .setThumbnail("https://sdriver1.me/profile.png")
+      .setThumbnail("https://pfp.pridebot.xyz/691506668781174824/omnisexualpansexual.png")
       .setTimestamp();
 
     await human.reply({ embeds: [Readme] });
