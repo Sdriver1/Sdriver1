@@ -130,11 +130,13 @@ async function getGitHubStats(username) {
 
 async function getBotStats() {
   try {
-    const response = await fetch("https://api.pridebot.xyz/api/stats");
+    const response = await fetch("https://api.pridebot.xyz/githubapi");
     const data = await response.json();
 
     return {
       currentGuildCount: data.currentGuildCount,
+      totalUserCount: formatUserCount(data.totalUserCount),
+      prismatotal: formatUserCount(data.prismatotal),
     };
   } catch (error) {
     console.error("Error fetching bot stats:", error);
@@ -142,6 +144,13 @@ async function getBotStats() {
       currentGuildCount: 0,
     };
   }
+}
+
+function formatUserCount(count) {
+  if (count >= 1000) {
+    return (count / 1000).toFixed(1) + "k+";
+  }
+  return count.toLocaleString();
 }
 
 async function updateReadme() {
@@ -188,8 +197,8 @@ module.exports = {
         },
         {
           name: \`Bot Development\`,
-          value: \`- Pridebot - Verified Discord bot, ${botStats.currentGuildCount} servers 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)\`,
+          value: \`- Pridebot - Verified Discord bot, ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members\`,
         },
         {
           name: \`Websites\`,
@@ -198,7 +207,7 @@ module.exports = {
         },
         {
           name: \`Servers\`,
-          value: \`- Pridetopia - *coming soon*\`,
+          value: \`- Corecord Gardens - *coming soon*\`,
         },
         {
           name: \`Socials\`,
@@ -208,7 +217,7 @@ module.exports = {
         },
       ])
       .setColor("#FF00EA") // Favorite color
-      .setThumbnail("https://sdriver1.me/profile.png")
+      .setThumbnail("https://pfp.pridebot.xyz/691506668781174824/omnisexualpansexual.png")
       .setTimestamp();
 
     await human.reply({ embeds: [Readme] });
