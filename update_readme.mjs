@@ -134,7 +134,7 @@ async function getBotStats() {
     const data = await response.json();
 
     return {
-      currentGuildCount: data.currentGuildCount,
+      currentGuildCount: formatUserCount(data.currentGuildCount),
       totalUserCount: formatUserCount(data.totalUserCount),
       prismatotal: formatUserCount(data.prismatotal),
     };
@@ -153,8 +153,41 @@ function formatUserCount(count) {
   return count.toLocaleString();
 }
 
+function calculateAge(birthday) {
+  const today = new Date();
+  const birthDate = new Date(birthday);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+
+  if (
+    monthDifference < 0 ||
+    (monthDifference === 0 && today.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+}
+
+function calculateMonthsTogether(anniversary) {
+  const today = new Date();
+  const anniversaryDate = new Date(anniversary);
+  let months =
+    (today.getFullYear() - anniversaryDate.getFullYear()) * 12 +
+    today.getMonth() -
+    anniversaryDate.getMonth();
+
+  if (today.getDate() < anniversaryDate.getDate()) {
+    months--;
+  }
+
+  return months;
+}
+
 async function updateReadme() {
   const username = "Sdriver1";
+  const age = calculateAge("2007-08-04");
+  const monthsTogether = calculateMonthsTogether("2023-11-04");
   const languages = await getLanguageStats(username);
   const stats = await getGitHubStats(username);
   const botStats = await getBotStats();
@@ -179,10 +212,10 @@ module.exports = {
       .setFields([
         {
           name: \`Who is Driver\`,
-          value: \`- 16 years 
+          value: \`- ${age} years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23\`,
+                  - Taken 💖 ~ 11/04/23 (${monthsTogether} months)\`,
         },
         {
           name: \`Languages\`,
