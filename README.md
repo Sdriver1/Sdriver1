@@ -14,21 +14,21 @@ module.exports = {
       .setFields([
         {
           name: `Who is Driver`,
-          value: `- 16 years 
+          value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23`,
+                  - Taken 💖 ~ 11/04/23 (9 months)`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (45.47%)
-                  - TypeScript (22.31%)
-                  - HTML       (20.49%)
-                  - CSS        (5.25%)
-                  - Python     (3.20%)
-                  - Java       (1.94%)
-                  - Perl       (1.12%)
-                  - Rust       (0.20%)
+          value: `- JavaScript (43.62%)
+                  - HTML       (22.68%)
+                  - TypeScript (21.46%)
+                  - CSS        (6.01%)
+                  - Python     (3.08%)
+                  - Java       (1.86%)
+                  - Perl       (1.08%)
+                  - Rust       (0.19%)
                   - Shell      (0.02%)`,
         },
         {
@@ -36,11 +36,11 @@ module.exports = {
           value: `- Followers:    5
                   - Total Repos:  11
                   - Stars:        4
-                  - Commits:      316`,
+                  - Commits:      320`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 1002 servers / 162.2k+ users 
+          value: `- Pridebot - Verified Discord bot, 1.0k+ servers / 162.2k+ users 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.4k+ members`,
         },
         {
