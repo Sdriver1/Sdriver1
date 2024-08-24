@@ -21,14 +21,14 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (45.09%)
-                  - TypeScript (23.18%)
-                  - HTML       (20.62%)
-                  - CSS        (5.46%)
-                  - Python     (3.33%)
-                  - Java       (2.01%)
-                  - Rust       (0.21%)
-                  - Perl       (0.09%)
+          value: `- JavaScript (45.47%)
+                  - TypeScript (22.31%)
+                  - HTML       (20.49%)
+                  - CSS        (5.25%)
+                  - Python     (3.20%)
+                  - Java       (1.94%)
+                  - Perl       (1.12%)
+                  - Rust       (0.20%)
                   - Shell      (0.02%)`,
         },
         {
@@ -36,12 +36,12 @@ module.exports = {
           value: `- Followers:    5
                   - Total Repos:  11
                   - Stars:        4
-                  - Commits:      301`,
+                  - Commits:      316`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 938 servers 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship)`,
+          value: `- Pridebot - Verified Discord bot, 1002 servers / 162.2k+ users 
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.4k+ members`,
         },
         {
           name: `Websites`,
@@ -50,7 +50,7 @@ module.exports = {
         },
         {
           name: `Servers`,
-          value: `- Pridetopia - *coming soon*`,
+          value: `- Corecord Gardens - *coming soon*`,
         },
         {
           name: `Socials`,
@@ -60,7 +60,7 @@ module.exports = {
         },
       ])
       .setColor("#FF00EA") // Favorite color
-      .setThumbnail("https://sdriver1.me/profile.png")
+      .setThumbnail("https://pfp.pridebot.xyz/691506668781174824/omnisexualpansexual.png")
       .setTimestamp();
 
     await human.reply({ embeds: [Readme] });
