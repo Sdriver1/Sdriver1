@@ -234,13 +234,13 @@ module.exports = {
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members\`,
         },
         {
+          name: \`Project\`,
+          value: \`- Center.chat - *coming soon*\`,
+        },
+        {
           name: \`Websites\`,
           value: \`- https://pridebot.xyz - Website for Pridebot
                   - https://sdriver1.me - Personal website\`,
-        },
-        {
-          name: \`Servers\`,
-          value: \`- Corecord Gardens - *coming soon*\`,
         },
         {
           name: \`Socials\`,
