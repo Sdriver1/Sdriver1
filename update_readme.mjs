@@ -44,6 +44,11 @@ async function getLanguageStats(username) {
     let languageTotals = {};
 
     for (const repo of repos) {
+      if (repo.private && !repo.permissions.admin && !repo.permissions.push) {
+        console.log(`Skipping private repo: ${repo.name}`);
+        continue;
+      }
+
       const { data } = await octokit.repos.listLanguages({
         owner: username,
         repo: repo.name,
@@ -90,8 +95,10 @@ async function getGitHubStats(username) {
     let commits = 0;
     for (const repo of repos) {
       if (repo.name === "Sdriver1") {
+        console.log(`Skipping repo: ${repo.name}`);
         continue;
       }
+
       const stargazers = await octokit.activity.listStargazersForRepo({
         owner: username,
         repo: repo.name,
