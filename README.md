@@ -17,7 +17,7 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (10 months)`,
+                  - Taken 💖 ~ 11/04/23 (11 months)`,
         },
         {
           name: `Languages`,
@@ -40,7 +40,7 @@ module.exports = {
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 1.4k+ servers / 182.0k+ users 
+          value: `- Pridebot - Verified Discord bot, 1.4k+ servers / 182.1k+ users 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.4k+ members`,
         },
         {
