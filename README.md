@@ -21,22 +21,22 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (43.75%)
-                  - HTML       (22.23%)
-                  - TypeScript (21.05%)
-                  - CSS        (5.89%)
-                  - Python     (3.02%)
-                  - Java       (2.81%)
-                  - Perl       (1.05%)
-                  - Rust       (0.19%)
-                  - Shell      (0.02%)`,
+          value: `- JavaScript (32.61%)
+                  - HTML       (23.31%)
+                  - Perl       (16.48%)
+                  - TypeScript (15.78%)
+                  - CSS        (4.74%)
+                  - Java       (4.66%)
+                  - Python     (2.26%)
+                  - Rust       (0.14%)
+                  - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    5
                   - Total Repos:  12
                   - Stars:        5
-                  - Commits:      349`,
+                  - Commits:      352`,
         },
         {
           name: `Bot Development`,
@@ -49,8 +49,13 @@ module.exports = {
         },
         {
           name: `Websites`,
-          value: `- https://pridebot.xyz - Website for Pridebot
-                  - https://sdriver1.me - Personal website`,
+          value: `//Pridebot Websites
+                  - https://pridebot.xyz - Website for Pridebot
+                  - https://pfp.pridebot.xyz - Pridebot PFP API
+
+                  // Personal Websites
+                  - https://sdriver1.me - Personal website
+                  - https://apcsa.sdriver1.me - Uploads of APCSA work`,
         },
         {
           name: `Socials`,
