@@ -246,8 +246,13 @@ module.exports = {
         },
         {
           name: \`Websites\`,
-          value: \`- https://pridebot.xyz - Website for Pridebot
-                  - https://sdriver1.me - Personal website\`,
+          value: \`//Pridebot Websites
+                  - https://pridebot.xyz - Website for Pridebot
+                  - https://pfp.pridebot.xyz - Pridebot PFP API
+
+                  // Personal Websites
+                  - https://sdriver1.me - Personal website
+                  - https://apcsa.sdriver1.me - Uploads of APCSA work\`,
         },
         {
           name: \`Socials\`,
