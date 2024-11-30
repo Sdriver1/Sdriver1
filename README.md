@@ -21,26 +21,26 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (32.73%)
-                  - HTML       (23.73%)
-                  - Perl       (16.29%)
-                  - TypeScript (15.59%)
-                  - CSS        (4.68%)
-                  - Java       (4.60%)
-                  - Python     (2.24%)
-                  - Rust       (0.14%)
+          value: `- JavaScript (35.01%)
+                  - HTML       (22.92%)
+                  - Perl       (15.73%)
+                  - TypeScript (15.06%)
+                  - CSS        (4.52%)
+                  - Java       (4.45%)
+                  - Python     (2.16%)
+                  - Rust       (0.13%)
                   - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    5
-                  - Total Repos:  12
-                  - Stars:        5
-                  - Commits:      374`,
+                  - Total Repos:  13
+                  - Stars:        6
+                  - Commits:      385`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 2.2k+ servers / 209.9k+ users 
+          value: `- Pridebot - Verified Discord bot, 2.2k+ servers / 210.6k+ users 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members`,
         },
         {
