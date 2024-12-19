@@ -94,7 +94,7 @@ async function getGitHubStats(username) {
     let stars = 0;
     let commits = 0;
     for (const repo of repos) {
-      if (repo.name === "Sdriver1") {
+      if (repo.name === "Sdriver1" || repo.name === "portalBot") {
         console.log(`Skipping repo: ${repo.name}`);
         continue;
       }
