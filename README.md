@@ -21,7 +21,15 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: ``,
+          value: `- JavaScript (36.06%)
+                  - HTML       (22.55%)
+                  - Perl       (15.48%)
+                  - TypeScript (14.81%)
+                  - CSS        (4.45%)
+                  - Java       (4.38%)
+                  - Python     (2.13%)
+                  - Rust       (0.13%)
+                  - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
