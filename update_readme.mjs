@@ -44,7 +44,10 @@ async function getLanguageStats(username) {
     let languageTotals = {};
 
     for (const repo of repos) {
-      if (repo.private && !repo.permissions.admin && !repo.permissions.push) {
+      if (
+        (repo.private && !repo.permissions.admin && !repo.permissions.push) ||
+        repo.name === "portalBot"
+      ) {
         console.log(`Skipping private repo: ${repo.name}`);
         continue;
       }
