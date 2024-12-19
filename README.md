@@ -17,31 +17,23 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (11 months)`,
+                  - Taken 💖 ~ 11/04/23 (13 months)`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (43.75%)
-                  - HTML       (22.23%)
-                  - TypeScript (21.05%)
-                  - CSS        (5.89%)
-                  - Python     (3.02%)
-                  - Java       (2.81%)
-                  - Perl       (1.05%)
-                  - Rust       (0.19%)
-                  - Shell      (0.02%)`,
+          value: ``,
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    5
-                  - Total Repos:  12
-                  - Stars:        5
-                  - Commits:      349`,
+          value: `- Followers:    0
+                  - Total Repos:  0
+                  - Stars:        0
+                  - Commits:      0`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 1.5k+ servers / 185.9k+ users 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.4k+ members`,
+          value: `- Pridebot - Verified Discord bot, 2.5k+ servers / 229.7k+ users 
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members`,
         },
         {
           name: `Project`,
@@ -49,8 +41,13 @@ module.exports = {
         },
         {
           name: `Websites`,
-          value: `- https://pridebot.xyz - Website for Pridebot
-                  - https://sdriver1.me - Personal website`,
+          value: `//Pridebot Websites
+                  - https://pridebot.xyz - Website for Pridebot
+                  - https://pfp.pridebot.xyz - Pridebot PFP API
+
+                  // Personal Websites
+                  - https://sdriver1.me - Personal website
+                  - https://apcsa.sdriver1.me - Uploads of APCSA work`,
         },
         {
           name: `Socials`,
