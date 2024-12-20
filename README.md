@@ -34,24 +34,22 @@ module.exports = {
         {
           name: `GitHub Stats`,
           value: `- Followers:    5
-                  - Total Repos:  14
+                  - Total Repos:  13
                   - Stars:        6
-                  - Commits:      398`,
+                  - Commits:      393`,
         },
         {
           name: `Bot Development`,
           value: `- Pridebot - Verified Discord bot, 2.5k+ servers / 230.7k+ users 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)`,
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members`,
         },
         {
           name: `Project`,
-          value: `- Center.chat - *coming soon*
-                  - DevEco bots - More at discord.gg/deveco`,
+          value: `- Center.chat - *coming soon*`,
         },
         {
           name: `Websites`,
-          value: `// Pridebot Websites
+          value: `//Pridebot Websites
                   - https://pridebot.xyz - Website for Pridebot
                   - https://pfp.pridebot.xyz - Pridebot PFP API
 
