@@ -41,15 +41,17 @@ module.exports = {
         {
           name: `Bot Development`,
           value: `- Pridebot - Verified Discord bot, 2.5k+ servers / 230.7k+ users 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members`,
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
+                  - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)`,
         },
         {
           name: `Project`,
-          value: `- Center.chat - *coming soon*`,
+          value: `- Center.chat - *coming soon*
+                  - DevEco bots - More at discord.gg/deveco`,
         },
         {
           name: `Websites`,
-          value: `//Pridebot Websites
+          value: `// Pridebot Websites
                   - https://pridebot.xyz - Website for Pridebot
                   - https://pfp.pridebot.xyz - Pridebot PFP API
 
