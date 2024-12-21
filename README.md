@@ -47,11 +47,11 @@ module.exports = {
         {
           name: `Project`,
           value: `- Center.chat - *coming soon*
-                   - DevEco - discord.gg/deveco`,
+                  - DevEco - discord.gg/deveco`,
         },
         {
           name: `Websites`,
-          value: `//Pridebot Websites
+          value: `// Pridebot Websites
                   - https://pridebot.xyz - Website for Pridebot
                   - https://pfp.pridebot.xyz - Pridebot PFP API
 
