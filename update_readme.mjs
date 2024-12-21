@@ -241,11 +241,13 @@ module.exports = {
         {
           name: \`Bot Development\`,
           value: \`- Pridebot - Verified Discord bot, ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members\`,
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members
+                  - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)\`,
         },
         {
           name: \`Project\`,
-          value: \`- Center.chat - *coming soon*\`,
+          value: \`- Center.chat - *coming soon*
+                   - DevEco - discord.gg/deveco\`,
         },
         {
           name: \`Websites\`,
