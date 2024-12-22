@@ -46,7 +46,8 @@ async function getLanguageStats(username) {
     for (const repo of repos) {
       if (
         (repo.private && !repo.permissions.admin && !repo.permissions.push) ||
-        repo.name === "portalBot"
+        repo.name === "portalBot" ||
+        repo.name === "portalBot-metadata"
       ) {
         console.log(`Skipping private repo: ${repo.name}`);
         continue;
@@ -97,7 +98,11 @@ async function getGitHubStats(username) {
     let stars = 0;
     let commits = 0;
     for (const repo of repos) {
-      if (repo.name === "Sdriver1" || repo.name === "portalBot") {
+      if (
+        repo.name === "Sdriver1" ||
+        repo.name === "portalBot" ||
+        repo.name === "portalBot-metadata"
+      ) {
         console.log(`Skipping repo: ${repo.name}`);
         continue;
       }
