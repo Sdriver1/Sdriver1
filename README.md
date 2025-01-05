@@ -40,7 +40,7 @@ module.exports = {
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 2.7k+ servers / 246.6k+ users 
+          value: `- Pridebot - Verified Discord bot, 2.7k+ servers / 247.0k+ users 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
                   - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)`,
         },
