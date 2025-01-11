@@ -17,22 +17,30 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (13 months)`,
+                  - Taken 💖 ~ 11/04/23 (14 months)`,
         },
         {
           name: `Languages`,
-          value: ``,
+          value: `- JavaScript (35.15%)
+                  - HTML       (22.87%)
+                  - Perl       (15.70%)
+                  - TypeScript (15.03%)
+                  - CSS        (4.51%)
+                  - Java       (4.44%)
+                  - Python     (2.16%)
+                  - Rust       (0.13%)
+                  - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    0
-                  - Total Repos:  0
-                  - Stars:        0
-                  - Commits:      0`,
+          value: `- Followers:    5
+                  - Total Repos:  13
+                  - Stars:        6
+                  - Commits:      384`,
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 2.5k+ servers / 233.5k+ users 
+          value: `- Pridebot - Verified Discord bot, 2.7k+ servers / 253.3k+ users 
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
                   - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)`,
         },
