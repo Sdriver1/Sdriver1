@@ -152,6 +152,7 @@ async function getBotStats() {
       currentGuildCount: formatUserCount(data.currentGuildCount),
       totalUserCount: formatUserCount(data.totalUserCount),
       prismatotal: formatUserCount(data.prismatotal),
+      obbytotal: formatUserCount(data.obbytotal),
     };
   } catch (error) {
     console.error("Error fetching bot stats:", error);
@@ -246,12 +247,13 @@ module.exports = {
         {
           name: \`Bot Development\`,
           value: \` // JavaScript
-                  - Pridebot - Verified Discord bot, ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
+                  - Pridebot - Your Discord bot to LGBTQ Identities ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
                   - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members\`,
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / ${botStats.obbytotal} members\`,
         },
         {
           name: \`Project\`,
