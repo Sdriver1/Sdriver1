@@ -40,9 +40,13 @@ module.exports = {
         },
         {
           name: `Bot Development`,
-          value: `- Pridebot - Verified Discord bot, 2.7k+ servers / 253.3k+ users 
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)`,
+          value: ` // JavaScript
+                  - Pridebot - Verified Discord bot, 2.7k+ servers / 253.3k+ users 
+                  - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)
+                  - AntiForward - Discord bot designed to keep forwarded messages out of your server
+                  
+                  // TypeScript
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members`,
         },
         {
           name: `Project`,
@@ -53,11 +57,10 @@ module.exports = {
           name: `Websites`,
           value: `// Pridebot Websites
                   - https://pridebot.xyz - Website for Pridebot
-                  - https://pfp.pridebot.xyz - Pridebot PFP API
+                  - https://pfp.pridebot.xyz - Pridebot PFP
 
                   // Personal Websites
-                  - https://sdriver1.me - Personal website
-                  - https://apcsa.sdriver1.me - Uploads of APCSA work`,
+                  - https://sdriver1.me - Personal website`,
         },
         {
           name: `Socials`,
