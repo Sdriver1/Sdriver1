@@ -45,8 +45,7 @@ async function getLanguageStats(username) {
 
     for (const repo of repos) {
       if (
-        (repo.private && !repo.permissions.admin && !repo.permissions.push) ||
-        repo.name === "portalBot" ||
+        (!repo.permissions.admin && !repo.permissions.push) ||
         repo.name === "portalBot-metadata"
       ) {
         console.log(`Skipping private repo: ${repo.name}`);
