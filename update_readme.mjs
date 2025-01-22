@@ -151,6 +151,7 @@ async function getBotStats() {
       prismatotal: formatUserCount(data.prismatotal),
       obbytotal: formatUserCount(data.obbytotal),
       portalGuildCount: formatUserCount(portaldata.currentGuildCount),
+      portalUserCount: formatUserCount(portaldata.totalUserCount),
     };
   } catch (error) {
     console.error("Error fetching bot stats:", error);
@@ -229,7 +230,8 @@ module.exports = {
           value: \`- ${age} years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (${monthsTogether} months)\`,
+                  - Taken 💖 ~ 11/04/23 (${monthsTogether} months)
+                  - Software Developer Intern @ devEco Consulting\`,
         },
         {
           name: \`Languages\`,
@@ -245,8 +247,8 @@ module.exports = {
         {
           name: \`Bot Development\`,
           value: \` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
-                  - PortalBot - Network/Chat bot for PortalBot network / ${botStats.portalGuildCount} servers
+                  - Pridebot - Your Discord bot to LGBTQ Identities | ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
+                  - PortalBot - Network/Chat bot for PortalBot network | ${botStats.portalGuildCount} servers / ${botStats.portalUserCount} users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
@@ -260,21 +262,19 @@ module.exports = {
         },
         {
           name: \`Websites\`,
-          value: \`// Pridebot Websites
-                  - https://pridebot.xyz
-                  - https://pfp.pridebot.xyz
-
-                  // Personal Websites
-                  - https://sdriver1.me - Personal website
-
-                  // Portalbot Websites
-                  - https://portalnet.work\`,
+          value: \`// Personal Websites
+                  - https://sdriver1.me
+                  
+                  // Bot Websites
+                  - https://pridebot.xyz - Pridebot
+                  - https://portalnet.work - PortalBot\`,
         },
         {
           name: \`Socials\`,
           value: \`- Discord - @sdriver1
                   - Tiktok - @sdriver75
-                  - Insta - @sdriver_1\`,
+                  - Insta - @sdriver_1
+                  - Linkedin - https://sdriver1.me/linkedin\`,
         },
       ])
       .setColor("#FF00EA") // Favorite color
