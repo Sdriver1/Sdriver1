@@ -140,14 +140,17 @@ async function getGitHubStats(username) {
 
 async function getBotStats() {
   try {
-    const response = await fetch("https://api.pridebot.xyz/githubapi");
-    const data = await response.json();
+    const prideresponse = await fetch("https://api.pridebot.xyz/githubapi");
+    const portalresponse = await fetch("https://api.portalnet.work/stats");
+    const data = await prideresponse.json();
+    const portaldata = await portalresponse.json();
 
     return {
       currentGuildCount: formatUserCount(data.currentGuildCount),
       totalUserCount: formatUserCount(data.totalUserCount),
       prismatotal: formatUserCount(data.prismatotal),
       obbytotal: formatUserCount(data.obbytotal),
+      portalGuildCount: formatUserCount(portaldata.currentGuildCount),
     };
   } catch (error) {
     console.error("Error fetching bot stats:", error);
@@ -243,7 +246,7 @@ module.exports = {
           name: \`Bot Development\`,
           value: \` // JavaScript
                   - Pridebot - Your Discord bot to LGBTQ Identities ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
-                  - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)
+                  - PortalBot - Network/Chat bot for PortalBot network / ${botStats.portalGuildCount} servers
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
@@ -258,11 +261,14 @@ module.exports = {
         {
           name: \`Websites\`,
           value: \`// Pridebot Websites
-                  - https://pridebot.xyz - Website for Pridebot
-                  - https://pfp.pridebot.xyz - Pridebot PFP
+                  - https://pridebot.xyz
+                  - https://pfp.pridebot.xyz
 
                   // Personal Websites
-                  - https://sdriver1.me - Personal website\`,
+                  - https://sdriver1.me - Personal website
+
+                  // Portalbot Websites
+                  - https://portalnet.work\`,
         },
         {
           name: \`Socials\`,
