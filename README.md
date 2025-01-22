@@ -21,9 +21,9 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (36.09%)
-                  - TypeScript (22.42%)
-                  - Perl       (16.44%)
+          value: `- JavaScript (36.11%)
+                  - TypeScript (22.41%)
+                  - Perl       (16.43%)
                   - HTML       (15.20%)
                   - Java       (4.65%)
                   - CSS        (2.80%)
@@ -41,13 +41,13 @@ module.exports = {
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities 0 servers / undefined users 
-                  - PortalBot - Network/Chat bot for DevEco server and partnering servers (.gg/deveco)
+                  - Pridebot - Your Discord bot to LGBTQ Identities 2.9k+ servers / 258.7k+ users 
+                  - PortalBot - Network/Chat bot for PortalBot network / 10 servers
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / undefined members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / undefined members`,
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 4.2k+ members`,
         },
         {
           name: `Project`,
@@ -57,11 +57,14 @@ module.exports = {
         {
           name: `Websites`,
           value: `// Pridebot Websites
-                  - https://pridebot.xyz - Website for Pridebot
-                  - https://pfp.pridebot.xyz - Pridebot PFP
+                  - https://pridebot.xyz
+                  - https://pfp.pridebot.xyz
 
                   // Personal Websites
-                  - https://sdriver1.me - Personal website`,
+                  - https://sdriver1.me - Personal website
+
+                  // Portalbot Websites
+                  - https://portalnet.work`,
         },
         {
           name: `Socials`,
