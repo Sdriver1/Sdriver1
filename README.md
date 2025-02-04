@@ -17,7 +17,7 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (14 months)
+                  - Taken 💖 ~ 11/04/23 (15 months)
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
