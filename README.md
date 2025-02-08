@@ -51,10 +51,15 @@ module.exports = {
           name: `Websites`,
           value: `// Personal Websites
                   - https://sdriver1.me
+                  - https://stevendriver.com
                   
                   // Bot Websites
                   - https://pridebot.xyz - Pridebot
-                  - https://portalnet.work - PortalBot`,
+                  - https://portalnet.work - PortalBot
+                  
+                  // Fun Websites
+                  - https://youarenow.gay 
+                  `,
         },
         {
           name: `Socials`,
