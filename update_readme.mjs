@@ -297,7 +297,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Call you and your friends gay | ${yang.visits} visits / ${yang.clicks} "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | ${yang.visits} visits / ${yang.clicks} "ungay" clicks
                   \`,
         },
         {
