@@ -166,6 +166,26 @@ async function getBotStats() {
   }
 }
 
+async function getYANGstats() {
+  try {
+    const vresponse = await fetch("https://youarenow.gay/api/visits");
+    const cresponse = await fetch("https://youarenow.gay/api/clicks");
+    const vdata = await vresponse.json();
+    const cdata = await cresponse.json();
+
+    return {
+      visits: formatUserCount(vdata.visits),
+      clicks: formatUserCount(cdata.clicks),
+    };
+  } catch (error) {
+    console.error("Error fetching YANG stats:", error);
+    return {
+      visits: 0,
+      clicks: 0,
+    };
+  }
+}
+
 function formatUserCount(count) {
   if (count >= 1000) {
     return (count / 1000).toFixed(1) + "k+";
@@ -211,6 +231,7 @@ async function updateReadme() {
   const languages = await getLanguageStats(username);
   const stats = await getGitHubStats(username);
   const botStats = await getBotStats();
+  const yang = await getYANGstats();
 
   const languagesString = languages
     .map((lang) => `- ${lang.language.padEnd(10)} (${lang.percentage}%)`)
@@ -276,7 +297,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay 
+                  - https://youarenow.gay - Call you and your friends gay | ${yang.visits} visits / ${yang.clicks} "ungay" clicks
                   \`,
         },
         {
