@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (36.14%)
-                  - TypeScript (22.40%)
-                  - Perl       (16.42%)
-                  - HTML       (15.19%)
+          value: `- JavaScript (36.19%)
+                  - TypeScript (22.39%)
+                  - Perl       (16.41%)
+                  - HTML       (15.18%)
                   - Java       (4.64%)
-                  - CSS        (2.80%)
-                  - Python     (2.26%)
+                  - CSS        (2.79%)
+                  - Python     (2.25%)
                   - Rust       (0.14%)
                   - Shell      (0.01%)`,
         },
@@ -42,13 +42,13 @@ module.exports = {
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.1k+ servers / 271.8k+ users 
-                  - PortalBot - Network/Chat bot for PortalBot network | 13 servers / 8.6k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 0 servers / undefined users 
+                  - PortalBot - Network/Chat bot for PortalBot network | undefined servers / undefined users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 4.9k+ members`,
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / undefined members
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / undefined members`,
         },
         {
           name: `Project`,
@@ -66,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay 
+                  - https://youarenow.gay - Turn you and your friends gay | 303 visits / 41 "ungay" clicks
                   `,
         },
         {
