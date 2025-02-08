@@ -46,7 +46,8 @@ async function getLanguageStats(username) {
     for (const repo of repos) {
       if (
         (!repo.permissions.admin && !repo.permissions.push) ||
-        repo.name === "portalBot-metadata"
+        repo.name === "portalBot-metadata" ||
+        repo.name === "portalBot"
       ) {
         console.log(`Skipping private repo: ${repo.name}`);
         continue;
@@ -97,7 +98,11 @@ async function getGitHubStats(username) {
     let stars = 0;
     let commits = 0;
     for (const repo of repos) {
-      if (repo.name === "Sdriver1" || repo.name === "portalBot-metadata") {
+      if (
+        repo.name === "Sdriver1" ||
+        repo.name === "portalBot-metadata" ||
+        repo.name === "portalBot"
+      ) {
         console.log(`Skipping repo: ${repo.name}`);
         continue;
       }
@@ -141,7 +146,7 @@ async function getGitHubStats(username) {
 async function getBotStats() {
   try {
     const prideresponse = await fetch("https://api.pridebot.xyz/githubapi");
-    const portalresponse = await fetch("https://api.portalnet.work/stats");
+    const portalresponse = await fetch("https://api.jer.cx/stats");
     const data = await prideresponse.json();
     const portaldata = await portalresponse.json();
 
