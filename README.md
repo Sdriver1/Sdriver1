@@ -66,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 479 visits / 224 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 505 visits / 236 "ungay" clicks
                   `,
         },
         {
