@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (36.19%)
-                  - TypeScript (22.39%)
-                  - Perl       (16.41%)
-                  - HTML       (15.18%)
-                  - Java       (4.64%)
-                  - CSS        (2.79%)
-                  - Python     (2.25%)
+          value: `- JavaScript (37.06%)
+                  - TypeScript (22.89%)
+                  - Perl       (16.78%)
+                  - HTML       (14.91%)
+                  - Java       (3.50%)
+                  - CSS        (2.40%)
+                  - Python     (2.30%)
                   - Rust       (0.14%)
                   - Shell      (0.01%)`,
         },
@@ -37,18 +37,18 @@ module.exports = {
           value: `- Followers:    6
                   - Total Repos:  13
                   - Stars:        6
-                  - Commits:      371`,
+                  - Commits:      375`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 0 servers / undefined users 
-                  - PortalBot - Network/Chat bot for PortalBot network | undefined servers / undefined users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.1k+ servers / 275.1k+ users 
+                  - PortalBot - Network/Chat bot for PortalBot network | 13 servers / 8.6k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / undefined members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / undefined members`,
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.0k+ members`,
         },
         {
           name: `Project`,
@@ -66,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 505 visits / 236 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 550 visits / 240 "ungay" clicks
                   `,
         },
         {
