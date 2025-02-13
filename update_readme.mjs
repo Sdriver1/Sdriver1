@@ -145,7 +145,7 @@ async function getGitHubStats(username) {
 
 async function getBotStats() {
   try {
-    const prideresponse = await fetch("https://api.pridebot.xyz/githubapi");
+    const prideresponse = await fetch("http://2.56.246.53:2610/githubapi");
     const portalresponse = await fetch("https://api.jer.cx/stats");
     const data = await prideresponse.json();
     const portaldata = await portalresponse.json();
