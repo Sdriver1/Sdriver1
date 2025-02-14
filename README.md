@@ -22,14 +22,22 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: ``,
+          value: `- JavaScript (37.07%)
+                  - TypeScript (22.88%)
+                  - Perl       (16.78%)
+                  - HTML       (14.91%)
+                  - Java       (3.50%)
+                  - CSS        (2.40%)
+                  - Python     (2.30%)
+                  - Rust       (0.14%)
+                  - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    0
-                  - Total Repos:  0
-                  - Stars:        0
-                  - Commits:      0`,
+          value: `- Followers:    6
+                  - Total Repos:  13
+                  - Stars:        6
+                  - Commits:      375`,
         },
         {
           name: `Bot Development`,
@@ -58,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 664 visits / 281 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 666 visits / 282 "ungay" clicks
                   `,
         },
         {
