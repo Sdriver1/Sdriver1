@@ -30,210 +30,195 @@ async function getRepositories(username) {
         throw new Error("Invalid response from GitHub API");
       }
     } while (response.data.length === 100);
-
-    return repos;
   } catch (error) {
     console.error("Error fetching repositories:", error);
-    return [];
   }
+
+  return repos;
 }
 
 async function getLanguageStats(username) {
+  let languageTotals = {};
+
   try {
     const repos = await getRepositories(username);
-    let languageTotals = {};
 
     for (const repo of repos) {
       if (
         (!repo.permissions.admin && !repo.permissions.push) ||
-        repo.name === "portalBot-metadata" ||
-        repo.name === "portalnet.work" ||
-        repo.name === "portalDocs"
+        ["portalBot-metadata", "portalnet.work", "portalDocs"].includes(
+          repo.name
+        )
       ) {
         console.log(`Skipping private repo: ${repo.name}`);
         continue;
       }
 
-      const { data } = await octokit.repos.listLanguages({
-        owner: username,
-        repo: repo.name,
-      });
+      try {
+        const { data } = await octokit.repos.listLanguages({
+          owner: username,
+          repo: repo.name,
+        });
 
-      for (const [language, bytes] of Object.entries(data)) {
-        if (languageTotals[language]) {
-          languageTotals[language] += bytes;
-        } else {
-          languageTotals[language] = bytes;
+        for (const [language, bytes] of Object.entries(data)) {
+          languageTotals[language] = (languageTotals[language] || 0) + bytes;
         }
+      } catch (error) {
+        console.error(`Error fetching languages for ${repo.name}:`, error);
       }
     }
-
-    const totalBytes = Object.values(languageTotals).reduce((a, b) => a + b, 0);
-
-    let stats = [];
-    for (const [language, bytes] of Object.entries(languageTotals)) {
-      stats.push({
-        language,
-        percentage: ((bytes / totalBytes) * 100).toFixed(2),
-      });
-    }
-
-    stats.sort((a, b) => b.percentage - a.percentage);
-
-    return stats;
   } catch (error) {
     console.error("Error fetching language stats:", error);
-    return [];
   }
+
+  const totalBytes = Object.values(languageTotals).reduce((a, b) => a + b, 0);
+  return Object.entries(languageTotals)
+    .map(([language, bytes]) => ({
+      language,
+      percentage: ((bytes / totalBytes) * 100).toFixed(2),
+    }))
+    .sort((a, b) => b.percentage - a.percentage);
 }
 
 async function getGitHubStats(username) {
+  let stats = {
+    followers: 0,
+    total_repos: 0,
+    stars: 0,
+    commits: 0,
+  };
+
   try {
     const userResponse = await fetch(
       `https://api.github.com/users/${username}`
     );
     const userData = await userResponse.json();
-
     const repos = await getRepositories(username);
 
     let stars = 0;
     let commits = 0;
+
     for (const repo of repos) {
       if (
-        repo.name === "Sdriver1" ||
-        repo.name === "portalBot-metadata" ||
-        repo.name === "portalnet.work" ||
-        repo.name === "portalDocs"
+        [
+          "Sdriver1",
+          "portalBot-metadata",
+          "portalnet.work",
+          "portalDocs",
+        ].includes(repo.name)
       ) {
         console.log(`Skipping repo: ${repo.name}`);
         continue;
       }
 
-      const stargazers = await octokit.activity.listStargazersForRepo({
-        owner: username,
-        repo: repo.name,
-        per_page: 100,
-      });
-      stars += stargazers.data.length;
+      try {
+        const stargazers = await octokit.activity.listStargazersForRepo({
+          owner: username,
+          repo: repo.name,
+          per_page: 100,
+        });
+        stars += stargazers.data.length;
 
-      const commitsList = await octokit.paginate(octokit.repos.listCommits, {
-        owner: username,
-        repo: repo.name,
-        per_page: 100,
-      });
-      commits += commitsList.length;
+        const commitsList = await octokit.paginate(octokit.repos.listCommits, {
+          owner: username,
+          repo: repo.name,
+          per_page: 100,
+        });
+        commits += commitsList.length;
+      } catch (error) {
+        console.error(`Error fetching stars/commits for ${repo.name}:`, error);
+      }
     }
 
-    const totalRepos =
-      userData.public_repos + (userData.total_private_repos || 0);
-
-    const stats = {
-      followers: userData.followers,
-      total_repos: totalRepos,
+    stats = {
+      followers: userData.followers || 0,
+      total_repos: userData.public_repos + (userData.total_private_repos || 0),
       stars,
       commits,
     };
-    return stats;
   } catch (error) {
     console.error("Error fetching GitHub stats:", error);
-    return {
-      followers: 0,
-      total_repos: 0,
-      stars: 0,
-      commits: 0,
-    };
   }
+
+  return stats;
 }
 
 async function getBotStats() {
+  let stats = {
+    currentGuildCount: 0,
+    totalUserCount: 0,
+    prismatotal: 0,
+    obbytotal: 0,
+    portalGuildCount: 0,
+    portalUserCount: 0,
+  };
+
   try {
     const prideresponse = await fetch("http://2.56.246.53:2610/githubapi");
-    const portalresponse = await fetch("https://api.jer.cx/stats");
     const data = await prideresponse.json();
-    const portaldata = await portalresponse.json();
-
-    return {
+    Object.assign(stats, {
       currentGuildCount: formatUserCount(data.currentGuildCount),
       totalUserCount: formatUserCount(data.totalUserCount),
       prismatotal: formatUserCount(data.prismatotal),
       obbytotal: formatUserCount(data.obbytotal),
+    });
+  } catch (error) {
+    console.error("Error fetching Pridebot stats:", error);
+  }
+
+  try {
+    const portalresponse = await fetch("https://api.portalnet.work/stats");
+    const portaldata = await portalresponse.json();
+    Object.assign(stats, {
       portalGuildCount: formatUserCount(portaldata.currentGuildCount),
       portalUserCount: formatUserCount(portaldata.totalUserCount),
-    };
+    });
   } catch (error) {
-    console.error("Error fetching bot stats:", error);
-    return {
-      currentGuildCount: 0,
-    };
+    console.error("Error fetching Portalbot stats:", error);
   }
+
+  return stats;
 }
 
 async function getYANGstats() {
+  let stats = { visits: 0, clicks: 0 };
+
   try {
     const vresponse = await fetch("https://youarenow.gay/api/visits");
-    const cresponse = await fetch("https://youarenow.gay/api/clicks");
     const vdata = await vresponse.json();
-    const cdata = await cresponse.json();
-
-    return {
-      visits: formatUserCount(vdata.visits),
-      clicks: formatUserCount(cdata.clicks),
-    };
+    stats.visits = formatUserCount(vdata.visits);
   } catch (error) {
-    console.error("Error fetching YANG stats:", error);
-    return {
-      visits: 0,
-      clicks: 0,
-    };
+    console.error("Error fetching YANG visits:", error);
   }
+
+  try {
+    const cresponse = await fetch("https://youarenow.gay/api/clicks");
+    const cdata = await cresponse.json();
+    stats.clicks = formatUserCount(cdata.clicks);
+  } catch (error) {
+    console.error("Error fetching YANG clicks:", error);
+  }
+
+  return stats;
 }
 
 function formatUserCount(count) {
-  if (count >= 1000) {
-    return (count / 1000).toFixed(1) + "k+";
-  }
-  return count.toLocaleString();
-}
-
-function calculateAge(birthday) {
-  const today = new Date();
-  const birthDate = new Date(birthday);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const monthDifference = today.getMonth() - birthDate.getMonth();
-
-  if (
-    monthDifference < 0 ||
-    (monthDifference === 0 && today.getDate() < birthDate.getDate())
-  ) {
-    age--;
-  }
-
-  return age;
-}
-
-function calculateMonthsTogether(anniversary) {
-  const today = new Date();
-  const anniversaryDate = new Date(anniversary);
-  let months =
-    (today.getFullYear() - anniversaryDate.getFullYear()) * 12 +
-    today.getMonth() -
-    anniversaryDate.getMonth();
-
-  if (today.getDate() < anniversaryDate.getDate()) {
-    months--;
-  }
-
-  return months;
+  return count >= 1000
+    ? (count / 1000).toFixed(1) + "k+"
+    : count.toLocaleString();
 }
 
 async function updateReadme() {
   const username = "Sdriver1";
   const age = calculateAge("2007-08-04");
   const monthsTogether = calculateMonthsTogether("2023-11-04");
-  const languages = await getLanguageStats(username);
-  const stats = await getGitHubStats(username);
-  const botStats = await getBotStats();
-  const yang = await getYANGstats();
+
+  const [languages, stats, botStats, yang] = await Promise.all([
+    getLanguageStats(username),
+    getGitHubStats(username),
+    getBotStats(),
+    getYANGstats(),
+  ]);
 
   const languagesString = languages
     .map((lang) => `- ${lang.language.padEnd(10)} (${lang.percentage}%)`)
