@@ -196,6 +196,21 @@ function calculateAge(birthday) {
   return age;
 }
 
+function calculateMonthsTogether(anniversary) {
+  const today = new Date();
+  const anniversaryDate = new Date(anniversary);
+  let months =
+    (today.getFullYear() - anniversaryDate.getFullYear()) * 12 +
+    today.getMonth() -
+    anniversaryDate.getMonth();
+
+  if (today.getDate() < anniversaryDate.getDate()) {
+    months--;
+  }
+
+  return months;
+}
+
 async function getYANGstats() {
   let stats = { visits: 0, clicks: 0 };
 
