@@ -17,7 +17,7 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (15 months)
+                  - Taken 💖 ~ 11/04/23 (16 months)
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
@@ -42,7 +42,7 @@ module.exports = {
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.4k+ servers / 283.4k+ users 
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.4k+ servers / 283.5k+ users 
                   - PortalBot - Network/Chat bot for PortalBot network | 17 servers / 11.3k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
