@@ -22,28 +22,28 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (37.10%)
-                  - TypeScript (22.87%)
-                  - Perl       (16.77%)
-                  - HTML       (14.90%)
-                  - Java       (3.50%)
-                  - CSS        (2.40%)
-                  - Python     (2.30%)
+          value: `- JavaScript (36.85%)
+                  - TypeScript (22.72%)
+                  - Perl       (16.66%)
+                  - HTML       (14.80%)
+                  - Java       (4.14%)
+                  - CSS        (2.39%)
+                  - Python     (2.29%)
                   - Rust       (0.14%)
                   - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    6
-                  - Total Repos:  13
+                  - Total Repos:  14
                   - Stars:        7
-                  - Commits:      375`,
+                  - Commits:      379`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.4k+ servers / 283.5k+ users 
-                  - PortalBot - Network/Chat bot for PortalBot network | 17 servers / 11.3k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.5k+ servers / 284.3k+ users 
+                  - PortalBot - Network/Chat bot for PortalBot network | 17 servers / 11.4k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
@@ -66,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 131.0k+ visits / 346 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 131.0k+ visits / 347 "ungay" clicks
                   `,
         },
         {
