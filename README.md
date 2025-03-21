@@ -17,38 +17,38 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (15 months)
+                  - Taken 💖 ~ 11/04/23 (16 months)
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (37.10%)
-                  - TypeScript (22.87%)
-                  - Perl       (16.77%)
-                  - HTML       (14.90%)
-                  - Java       (3.50%)
-                  - CSS        (2.40%)
-                  - Python     (2.30%)
-                  - Rust       (0.14%)
+          value: `- CSS        (39.57%)
+                  - JavaScript (24.03%)
+                  - TypeScript (12.06%)
+                  - HTML       (11.09%)
+                  - Perl       (8.84%)
+                  - Java       (3.11%)
+                  - Python     (1.21%)
+                  - Rust       (0.07%)
                   - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    6
-                  - Total Repos:  13
+                  - Total Repos:  15
                   - Stars:        7
-                  - Commits:      375`,
+                  - Commits:      462`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.4k+ servers / 283.4k+ users 
-                  - PortalBot - Network/Chat bot for PortalBot network | 17 servers / 11.3k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.7k+ servers / 294.1k+ users 
+                  - PortalBot - Network/Chat bot for PortalBot network | 21 servers / 13.5k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.3k+ members`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.0k+ members`,
         },
         {
           name: `Project`,
@@ -66,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 131.0k+ visits / 346 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 813 visits / 373 "ungay" clicks
                   `,
         },
         {
