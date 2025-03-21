@@ -46,9 +46,12 @@ async function getLanguageStats(username) {
     for (const repo of repos) {
       if (
         (!repo.permissions.admin && !repo.permissions.push) ||
-        ["portalBot-metadata", "portalnet.work", "portalDocs"].includes(
-          repo.name
-        )
+        [
+          "portalBot-metadata",
+          "portalnet.work",
+          "portalDocs",
+          "consulting.thedeveco.com",
+        ].includes(repo.name)
       ) {
         console.log(`Skipping private repo: ${repo.name}`);
         continue;
@@ -105,6 +108,7 @@ async function getGitHubStats(username) {
           "portalBot-metadata",
           "portalnet.work",
           "portalDocs",
+          "consulting.thedeveco.com",
         ].includes(repo.name)
       ) {
         console.log(`Skipping repo: ${repo.name}`);
