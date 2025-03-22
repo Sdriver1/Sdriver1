@@ -22,28 +22,28 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (36.23%)
-                  - TypeScript (22.33%)
-                  - Perl       (16.37%)
-                  - HTML       (14.55%)
-                  - Java       (5.77%)
-                  - CSS        (2.34%)
-                  - Python     (2.25%)
+          value: `- JavaScript (36.15%)
+                  - TypeScript (22.05%)
+                  - Perl       (16.17%)
+                  - HTML       (15.16%)
+                  - Java       (5.69%)
+                  - CSS        (2.32%)
+                  - Python     (2.31%)
                   - Rust       (0.14%)
                   - Shell      (0.01%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    6
-                  - Total Repos:  15
+                  - Total Repos:  16
                   - Stars:        7
-                  - Commits:      385`,
+                  - Commits:      387`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.7k+ servers / 294.1k+ users 
-                  - PortalBot - Network/Chat bot for PortalBot network | 21 servers / 13.5k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.7k+ servers / 294.4k+ users 
+                  - PortalBot - Network/Chat bot for PortalBot network | 22 servers / 13.7k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
@@ -66,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 813 visits / 373 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 816 visits / 376 "ungay" clicks
                   `,
         },
         {
