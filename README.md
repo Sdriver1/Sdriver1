@@ -22,10 +22,10 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (35.90%)
-                  - TypeScript (21.80%)
-                  - Perl       (15.98%)
-                  - HTML       (15.97%)
+          value: `- JavaScript (35.93%)
+                  - TypeScript (21.79%)
+                  - Perl       (15.97%)
+                  - HTML       (15.96%)
                   - Java       (5.63%)
                   - CSS        (2.29%)
                   - Python     (2.28%)
@@ -34,21 +34,22 @@ module.exports = {
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    6
-                  - Total Repos:  16
+          value: `- Followers:    0
+                  - Total Repos:  NaN
                   - Stars:        7
-                  - Commits:      393`,
+                  - Commits:      395`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.8k+ servers / 307.2k+ users 
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.8k+ servers / 307.6k+ users
+                  - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 22 servers / 13.7k+ users
-                  - AntiForward - Discord bot designed to keep forwarded messages out of your server
+                  - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.5k+ members`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.5k+ members (Offline)`,
         },
         {
           name: `Project`,
@@ -67,6 +68,7 @@ module.exports = {
                   
                   // Fun Websites
                   - https://youarenow.gay - Turn you and your friends gay | 828 visits / 383 "ungay" clicks
+                  - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
                   `,
         },
         {
