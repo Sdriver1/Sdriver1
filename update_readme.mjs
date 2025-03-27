@@ -95,7 +95,12 @@ async function getGitHubStats(username) {
     const userResponse = await fetch(
       `https://api.github.com/users/${username}`
     );
+    const orgResponse = await fetch(
+      `https://api.github.com/orgs/Pridebot-Systems`
+    );
+
     const userData = await userResponse.json();
+    const orgData = await orgResponse.json();
     const repos = await getRepositories(username);
 
     let stars = 0;
@@ -136,7 +141,7 @@ async function getGitHubStats(username) {
 
     stats = {
       followers: userData.followers || 0,
-      total_repos: userData.public_repos + (userData.total_private_repos || 0),
+      total_repos: userData.public_repos + orgData.public_repos,
       stars,
       commits,
     };
@@ -295,13 +300,14 @@ module.exports = {
         {
           name: \`Bot Development\`,
           value: \` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users 
+                  - Pridebot - Your Discord bot to LGBTQ Identities | ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users
+                  - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | ${botStats.portalGuildCount} servers / ${botStats.portalUserCount} users
-                  - AntiForward - Discord bot designed to keep forwarded messages out of your server
+                  - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / ${botStats.obbytotal} members\`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / ${botStats.obbytotal} members (Offline)\`,
         },
         {
           name: \`Project\`,
@@ -320,6 +326,7 @@ module.exports = {
                   
                   // Fun Websites
                   - https://youarenow.gay - Turn you and your friends gay | ${yang.visits} visits / ${yang.clicks} "ungay" clicks
+                  - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
                   \`,
         },
         {
