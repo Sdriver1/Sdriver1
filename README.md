@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (36.10%)
-                  - TypeScript (22.02%)
-                  - Perl       (16.14%)
-                  - HTML       (15.29%)
-                  - Java       (5.69%)
-                  - Python     (2.31%)
-                  - CSS        (2.31%)
+          value: `- JavaScript (35.90%)
+                  - TypeScript (21.80%)
+                  - Perl       (15.98%)
+                  - HTML       (15.97%)
+                  - Java       (5.63%)
+                  - CSS        (2.29%)
+                  - Python     (2.28%)
                   - Rust       (0.14%)
                   - Shell      (0.01%)`,
         },
@@ -37,18 +37,18 @@ module.exports = {
           value: `- Followers:    6
                   - Total Repos:  16
                   - Stars:        7
-                  - Commits:      388`,
+                  - Commits:      393`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.8k+ servers / 303.4k+ users 
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.8k+ servers / 307.2k+ users 
                   - PortalBot - Network/Chat bot for PortalBot network | 22 servers / 13.7k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.4k+ members`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.5k+ members`,
         },
         {
           name: `Project`,
@@ -66,7 +66,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 820 visits / 378 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 828 visits / 383 "ungay" clicks
                   `,
         },
         {
