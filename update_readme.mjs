@@ -141,7 +141,7 @@ async function getGitHubStats(username) {
 
     stats = {
       followers: userData.followers || 0,
-      total_repos: userData.public_repos + orgData.public_repos,
+      total_repos: (userData.public_repos || 16) + (orgData.public_repos || 2),
       stars,
       commits,
     };
