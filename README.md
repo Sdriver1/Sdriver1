@@ -22,34 +22,34 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (41.56%)
-                  - TypeScript (19.74%)
-                  - HTML       (14.80%)
-                  - Perl       (14.47%)
-                  - Java       (5.10%)
-                  - CSS        (2.07%)
-                  - Python     (2.07%)
+          value: `- JavaScript (40.50%)
+                  - TypeScript (19.16%)
+                  - HTML       (17.13%)
+                  - Perl       (14.05%)
+                  - Java       (4.95%)
+                  - CSS        (2.01%)
+                  - Python     (2.01%)
                   - Rust       (0.12%)
                   - Shell      (0.07%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    7
-                  - Total Repos:  19
+                  - Total Repos:  20
                   - Stars:        7
-                  - Commits:      497`,
+                  - Commits:      661`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.8k+ servers / 309.2k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.9k+ servers / 310.9k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 23 servers / 13.7k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.5k+ members (Offline)`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.7k+ members (Offline)`,
         },
         {
           name: `Project`,
