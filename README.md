@@ -44,7 +44,7 @@ module.exports = {
           value: ` // JavaScript
                   - Pridebot - Your Discord bot to LGBTQ Identities | 3.9k+ servers / 311.0k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 23 servers / 13.8k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 24 servers / 16.0k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 835 visits / 385 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 836 visits / 385 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
                   `,
         },
