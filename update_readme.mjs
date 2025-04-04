@@ -52,6 +52,8 @@ async function getLanguageStats(username) {
       }
 
       try {
+        console.log(`[Languages] Fetching from ${repo.owner.login}/${repo.name}`);
+        console.log(`[Languages] ${repo.name} →`, data);
         const { data } = await octokit.repos.listLanguages({
           owner: repo.owner.login,
           repo: repo.name,
@@ -118,6 +120,8 @@ async function getGitHubStats(username) {
         });
         stars += stargazers.data.length;
 
+        console.log(`[Commits] Fetching from ${repo.owner.login}/${repo.name}`);
+        console.log(`[Commits] ${repo.name} → ${commitsList.length} commits`);
         const commitsList = await octokit.paginate(octokit.repos.listCommits, {
            owner: repo.owner.login,
           repo: repo.name,
