@@ -17,7 +17,7 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (16 months)
+                  - Taken 💖 ~ 11/04/23 (17 months)
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
@@ -42,14 +42,14 @@ module.exports = {
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.9k+ servers / 311.0k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.9k+ servers / 312.3k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 24 servers / 16.0k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.7k+ members (Offline)`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.9k+ members (Offline)`,
         },
         {
           name: `Project`,
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 836 visits / 385 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 837 visits / 385 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
                   `,
         },
