@@ -327,6 +327,9 @@ module.exports = {
                   // Fun Websites
                   - https://youarenow.gay - Turn you and your friends gay | ${yang.visits} visits / ${yang.clicks} "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
+
+                  // Help Contributed too
+                  - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
                   \`,
         },
         {
