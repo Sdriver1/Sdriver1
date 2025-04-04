@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (40.50%)
-                  - TypeScript (19.16%)
-                  - HTML       (17.13%)
-                  - Perl       (14.05%)
-                  - Java       (4.95%)
+          value: `- JavaScript (40.68%)
+                  - TypeScript (19.11%)
+                  - HTML       (17.08%)
+                  - Perl       (14.01%)
+                  - Java       (4.93%)
                   - CSS        (2.01%)
-                  - Python     (2.01%)
+                  - Python     (2.00%)
                   - Rust       (0.12%)
                   - Shell      (0.07%)`,
         },
@@ -37,12 +37,12 @@ module.exports = {
           value: `- Followers:    7
                   - Total Repos:  20
                   - Stars:        7
-                  - Commits:      661`,
+                  - Commits:      662`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.9k+ servers / 312.3k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.9k+ servers / 312.4k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 24 servers / 16.0k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
@@ -67,8 +67,11 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 837 visits / 385 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 838 visits / 386 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
+
+                  // Help Contributed too
+                  - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
                   `,
         },
         {
