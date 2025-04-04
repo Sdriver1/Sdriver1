@@ -45,13 +45,7 @@ async function getLanguageStats(username) {
 
     for (const repo of repos) {
       if (
-        (!repo.permissions.admin && !repo.permissions.push) ||
-        [
-          "portalBot-metadata",
-          "portalnet.work",
-          "portalDocs",
-          "consulting.thedeveco.com",
-        ].includes(repo.name)
+        (!repo.permissions.admin && !repo.permissions.push)
       ) {
         console.log(`Skipping private repo: ${repo.name}`);
         continue;
@@ -110,10 +104,6 @@ async function getGitHubStats(username) {
       if (
         [
           "Sdriver1",
-          "portalBot-metadata",
-          "portalnet.work",
-          "portalDocs",
-          "consulting.thedeveco.com",
         ].includes(repo.name)
       ) {
         console.log(`Skipping repo: ${repo.name}`);
@@ -122,14 +112,14 @@ async function getGitHubStats(username) {
 
       try {
         const stargazers = await octokit.activity.listStargazersForRepo({
-          owner: username,
+          owner: repo.owner.login,
           repo: repo.name,
           per_page: 100,
         });
         stars += stargazers.data.length;
 
         const commitsList = await octokit.paginate(octokit.repos.listCommits, {
-          owner: username,
+           owner: repo.owner.login,
           repo: repo.name,
           per_page: 100,
         });
@@ -141,7 +131,7 @@ async function getGitHubStats(username) {
 
     stats = {
       followers: userData.followers || 0,
-      total_repos: (userData.public_repos || 16) + (orgData.public_repos || 2),
+      total_repos: (userData.public_repos || 16) + (orgData.public_repos || 2) + 3,
       stars,
       commits,
     };
