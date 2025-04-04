@@ -53,7 +53,7 @@ async function getLanguageStats(username) {
 
       try {
         const { data } = await octokit.repos.listLanguages({
-          owner: username,
+          owner: repo.owner.login,
           repo: repo.name,
         });
 
