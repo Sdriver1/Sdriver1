@@ -22,14 +22,14 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- CSS        (36.27%)
-                  - JavaScript (27.61%)
-                  - HTML       (12.84%)
-                  - TypeScript (11.05%)
-                  - Perl       (8.10%)
-                  - Java       (2.85%)
-                  - Python     (1.16%)
-                  - Rust       (0.07%)
+          value: `- CSS        (33.88%)
+                  - JavaScript (25.87%)
+                  - HTML       (19.01%)
+                  - TypeScript (10.06%)
+                  - Perl       (7.38%)
+                  - Java       (2.60%)
+                  - Python     (1.11%)
+                  - Rust       (0.06%)
                   - Shell      (0.04%)`,
         },
         {
