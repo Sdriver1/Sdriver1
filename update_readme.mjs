@@ -44,20 +44,20 @@ async function getLanguageStats(username) {
     const repos = await getRepositories(username);
 
     for (const repo of repos) {
-      if (
-        (!repo.permissions.admin && !repo.permissions.push)
-      ) {
+      if (!repo.permissions.admin && !repo.permissions.push) {
         console.log(`Skipping private repo: ${repo.name}`);
         continue;
       }
 
       try {
-        console.log(`[Languages] Fetching from ${repo.owner.login}/${repo.name}`);
-        console.log(`[Languages] ${repo.name} →`, data);
+        console.log(
+          `[Languages] Fetching from ${repo.owner.login}/${repo.name}`
+        );
         const { data } = await octokit.repos.listLanguages({
           owner: repo.owner.login,
           repo: repo.name,
         });
+        console.log(`[Languages] ${repo.name} →`, data);
 
         for (const [language, bytes] of Object.entries(data)) {
           languageTotals[language] = (languageTotals[language] || 0) + bytes;
@@ -103,11 +103,7 @@ async function getGitHubStats(username) {
     let commits = 0;
 
     for (const repo of repos) {
-      if (
-        [
-          "Sdriver1",
-        ].includes(repo.name)
-      ) {
+      if (["Sdriver1"].includes(repo.name)) {
         console.log(`Skipping repo: ${repo.name}`);
         continue;
       }
@@ -121,12 +117,12 @@ async function getGitHubStats(username) {
         stars += stargazers.data.length;
 
         console.log(`[Commits] Fetching from ${repo.owner.login}/${repo.name}`);
-        console.log(`[Commits] ${repo.name} → ${commitsList.length} commits`);
         const commitsList = await octokit.paginate(octokit.repos.listCommits, {
-           owner: repo.owner.login,
+          owner: repo.owner.login,
           repo: repo.name,
           per_page: 100,
         });
+        console.log(`[Commits] ${repo.name} → ${commitsList.length} commits`);
         commits += commitsList.length;
       } catch (error) {
         console.error(`Error fetching stars/commits for ${repo.name}:`, error);
@@ -135,7 +131,7 @@ async function getGitHubStats(username) {
 
     stats = {
       followers: userData.followers || 0,
-      total_repos: (userData.public_repos || 16) + (orgData.public_repos || 2) + 3,
+      total_repos: (userData.public_repos || 16) + (orgData.public_repos || 2),
       stars,
       commits,
     };
@@ -188,14 +184,12 @@ function calculateAge(birthday) {
   const birthDate = new Date(birthday);
   let age = today.getFullYear() - birthDate.getFullYear();
   const monthDifference = today.getMonth() - birthDate.getMonth();
-
   if (
     monthDifference < 0 ||
     (monthDifference === 0 && today.getDate() < birthDate.getDate())
   ) {
     age--;
   }
-
   return age;
 }
 
