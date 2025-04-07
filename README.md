@@ -22,11 +22,11 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (35.93%)
+          value: `- JavaScript (35.94%)
                   - HTML       (26.48%)
-                  - TypeScript (16.33%)
+                  - TypeScript (16.32%)
                   - Perl       (11.97%)
-                  - Java       (4.22%)
+                  - Java       (4.21%)
                   - CSS        (3.12%)
                   - Python     (1.80%)
                   - Rust       (0.10%)
@@ -37,19 +37,19 @@ module.exports = {
           value: `- Followers:    7
                   - Total Repos:  23
                   - Stars:        7
-                  - Commits:      756`,
+                  - Commits:      757`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 3.9k+ servers / 312.4k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 4.0k+ servers / 313.3k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 25 servers / 16.2k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 5.9k+ members (Offline)`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 6.0k+ members (Offline)`,
         },
         {
           name: `Project`,
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 840 visits / 386 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 843 visits / 387 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
