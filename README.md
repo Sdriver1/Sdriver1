@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (35.94%)
-                  - HTML       (26.48%)
-                  - TypeScript (16.32%)
-                  - Perl       (11.97%)
-                  - Java       (4.21%)
-                  - CSS        (3.12%)
-                  - Python     (1.80%)
+          value: `- JavaScript (35.83%)
+                  - HTML       (26.37%)
+                  - TypeScript (16.26%)
+                  - Perl       (11.92%)
+                  - Java       (4.20%)
+                  - CSS        (3.11%)
+                  - Python     (2.16%)
                   - Rust       (0.10%)
                   - Shell      (0.06%)`,
         },
@@ -37,19 +37,19 @@ module.exports = {
           value: `- Followers:    7
                   - Total Repos:  23
                   - Stars:        7
-                  - Commits:      757`,
+                  - Commits:      764`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 4.0k+ servers / 315.7k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 4.0k+ servers / 317.3k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 25 servers / 16.2k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 6.0k+ members (Offline)`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 6.4k+ members (Offline)`,
         },
         {
           name: `Project`,
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 846 visits / 388 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 848 visits / 388 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
