@@ -42,14 +42,14 @@ module.exports = {
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 4.3k+ servers / 355.7k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 4.3k+ servers / 375.1k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 26 servers / 16.3k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 28 servers / 16.5k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
                   - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 1.3k+ members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 7.0k+ members (Offline)`,
+                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 7.1k+ members (Offline)`,
         },
         {
           name: `Project`,
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 0 visits / 398 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 0 visits / 404 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
