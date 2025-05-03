@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (35.90%)
-                  - HTML       (26.34%)
-                  - TypeScript (16.24%)
-                  - Perl       (11.90%)
-                  - Java       (4.19%)
-                  - CSS        (3.11%)
-                  - Python     (2.16%)
+          value: `- JavaScript (35.17%)
+                  - HTML       (27.70%)
+                  - TypeScript (15.65%)
+                  - Perl       (11.47%)
+                  - Java       (4.04%)
+                  - CSS        (3.67%)
+                  - Python     (2.15%)
                   - Rust       (0.10%)
                   - Shell      (0.06%)`,
         },
@@ -37,12 +37,12 @@ module.exports = {
           value: `- Followers:    7
                   - Total Repos:  24
                   - Stars:        7
-                  - Commits:      766`,
+                  - Commits:      770`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 4.5k+ servers / 380.4k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 4.5k+ servers / 380.2k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 30 servers / 26.8k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 937 visits / 454 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 941 visits / 460 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
