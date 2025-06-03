@@ -8,7 +8,9 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-async function getRepositories(username) {
+const commitExcludeRepos = ["Pridebot-Systems/.github", "Sdriver1/Pridebot"];
+
+async function getRepositories(username, orgs = []) {
   let repos = [];
   let response;
   let page = 1;
@@ -30,46 +32,95 @@ async function getRepositories(username) {
         throw new Error("Invalid response from GitHub API");
       }
     } while (response.data.length === 100);
+    console.log(
+      `[REPOS] Total personal repos fetched for ${username}: ${repos.length}`
+    );
   } catch (error) {
-    console.error("Error fetching repositories:", error);
+    console.error("Error fetching personal repositories:", error);
   }
 
+  for (const org of orgs) {
+    page = 1;
+    try {
+      let orgReposCount = 0;
+      do {
+        response = await octokit.repos.listForOrg({
+          org,
+          type: "all",
+          sort: "updated",
+          per_page: 100,
+          page,
+        });
+
+        if (response && response.data) {
+          repos = repos.concat(response.data);
+          orgReposCount += response.data.length;
+          page++;
+        } else {
+          throw new Error("Invalid response from GitHub API");
+        }
+      } while (response.data.length === 100);
+      console.log(
+        `[REPOS] Total org repos fetched for ${org}: ${orgReposCount}`
+      );
+    } catch (error) {
+      console.error(`Error fetching repositories for org ${org}:`, error);
+    }
+  }
+
+  console.log(`[REPOS] Total combined repos: ${repos.length}`);
   return repos;
 }
 
 async function getLanguageStats(username) {
   let languageTotals = {};
 
-  try {
-    const repos = await getRepositories(username);
+  const repos = await getRepositories(username, ["Pridebot-Systems"]);
 
-    for (const repo of repos) {
-      if (
-        (!repo.permissions.admin && !repo.permissions.push) ||
-        (repo.owner.login === "Sdriver1" &&
-          repo.name === "consulting.thedeveco.com")
-      ) {
-        continue;
-      }
-
-      try {
-        const { data } = await octokit.repos.listLanguages({
-          owner: repo.owner.login,
-          repo: repo.name,
-        });
-
-        for (const [language, bytes] of Object.entries(data)) {
-          languageTotals[language] = (languageTotals[language] || 0) + bytes;
-        }
-      } catch (error) {
-        console.error(`Error fetching languages for ${repo.name}:`, error);
-      }
+  for (const repo of repos) {
+    if (
+      (!repo.permissions.admin && !repo.permissions.push) ||
+      (repo.owner.login === "Sdriver1" &&
+        repo.name === "consulting.thedeveco.com")
+    ) {
+      console.log(
+        `[LANGUAGES] Skipping repo: ${repo.full_name} (No push/admin or blacklisted)`
+      );
+      continue;
     }
-  } catch (error) {
-    console.error("Error fetching language stats:", error);
+
+    console.log(`[LANGUAGES] Counting languages in repo: ${repo.full_name}`);
+
+    try {
+      const { data } = await octokit.repos.listLanguages({
+        owner: repo.owner.login,
+        repo: repo.name,
+      });
+
+      for (const [language, bytes] of Object.entries(data)) {
+        languageTotals[language] = (languageTotals[language] || 0) + bytes;
+      }
+      if (Object.keys(data).length === 0) {
+        console.log(
+          `[LANGUAGES] No language data found in repo: ${repo.full_name}`
+        );
+      }
+    } catch (error) {
+      console.error(
+        `[LANGUAGES] Error fetching languages for ${repo.name}:`,
+        error
+      );
+    }
   }
 
+  console.log(`[LANGUAGES] Final language totals:`, languageTotals);
+
   const totalBytes = Object.values(languageTotals).reduce((a, b) => a + b, 0);
+  if (totalBytes === 0) {
+    console.warn(
+      "[LANGUAGES] No bytes counted at all! Are you filtering out too many repos?"
+    );
+  }
   return Object.entries(languageTotals)
     .map(([language, bytes]) => ({
       language,
@@ -96,18 +147,40 @@ async function getGitHubStats(username) {
 
     const userData = await userResponse.json();
     const orgData = await orgResponse.json();
-    const repos = await getRepositories(username);
+    const repos = await getRepositories(username, ["Pridebot-Systems"]);
 
     let stars = 0;
     let commits = 0;
 
     for (const repo of repos) {
       if (["Sdriver1", "consulting.thedeveco.com"].includes(repo.name)) {
-        console.log(`Skipping repo: ${repo.name}`);
+        console.log(`[COMMITS] Skipping repo: ${repo.name}`);
+        continue;
+      }
+
+      if (commitExcludeRepos.includes(repo.full_name)) {
+        console.log(`[COMMITS] Skipping commit count for: ${repo.full_name}`);
+        try {
+          const stargazers = await octokit.activity.listStargazersForRepo({
+            owner: repo.owner.login,
+            repo: repo.name,
+            per_page: 100,
+          });
+          stars += stargazers.data.length;
+        } catch (error) {
+          console.error(
+            `[COMMITS] Error fetching stars for ${repo.full_name}:`,
+            error
+          );
+        }
         continue;
       }
 
       try {
+        console.log(
+          `[COMMITS] Counting stars and commits in repo: ${repo.full_name}`
+        );
+
         const stargazers = await octokit.activity.listStargazersForRepo({
           owner: repo.owner.login,
           repo: repo.name,
@@ -120,11 +193,17 @@ async function getGitHubStats(username) {
           repo: repo.name,
           per_page: 100,
         });
+        console.log(
+          `[COMMITS] Fetched ${commitsList.length} commits from ${repo.full_name}`
+        );
         commits += commitsList.length;
       } catch (error) {
-        console.error(`Error fetching stars/commits for ${repo.name}:`, error);
+        console.error(`[COMMITS] Error for ${repo.full_name}:`, error);
       }
     }
+
+    console.log(`[COMMITS] Final total commits counted: ${commits}`);
+    console.log(`[COMMITS] Final total stars counted: ${stars}`);
 
     stats = {
       followers: userData.followers || 0,
