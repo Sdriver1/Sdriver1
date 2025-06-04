@@ -17,15 +17,15 @@ module.exports = {
           value: `- 17 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (18 months)
+                  - Taken 💖 ~ 11/04/23 (19 months)
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (46.31%)
-                  - HTML       (25.90%)
-                  - TypeScript (11.16%)
-                  - Perl       (8.18%)
+          value: `- JavaScript (46.37%)
+                  - HTML       (25.87%)
+                  - TypeScript (11.15%)
+                  - Perl       (8.17%)
                   - CSS        (3.92%)
                   - Java       (2.88%)
                   - Python     (1.53%)
@@ -37,14 +37,14 @@ module.exports = {
           value: `- Followers:    9
                   - Total Repos:  25
                   - Stars:        11
-                  - Commits:      813`,
+                  - Commits:      815`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 5.2k+ servers / 522.6k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 5.3k+ servers / 524.3k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 30 servers / 62.3k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 30 servers / 62.4k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 1.0k+ visits / 512 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 1.0k+ visits / 514 "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
