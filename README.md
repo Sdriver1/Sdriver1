@@ -22,9 +22,9 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (46.01%)
-                  - HTML       (26.22%)
-                  - TypeScript (10.84%)
+          value: `- JavaScript (45.99%)
+                  - HTML       (26.25%)
+                  - TypeScript (10.83%)
                   - Perl       (7.94%)
                   - CSS        (4.20%)
                   - Java       (2.80%)
@@ -37,14 +37,14 @@ module.exports = {
           value: `- Followers:    9
                   - Total Repos:  26
                   - Stars:        11
-                  - Commits:      830`,
+                  - Commits:      831`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 5.4k+ servers / 523.2k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 5.4k+ servers / 523.8k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 31 servers / 74.8k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 31 servers / 74.9k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
