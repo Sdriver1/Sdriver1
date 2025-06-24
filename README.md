@@ -22,11 +22,11 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (46.06%)
-                  - HTML       (26.32%)
-                  - TypeScript (10.73%)
+          value: `- JavaScript (46.02%)
+                  - HTML       (26.34%)
+                  - TypeScript (10.74%)
                   - Perl       (7.87%)
-                  - CSS        (4.27%)
+                  - CSS        (4.28%)
                   - Java       (2.77%)
                   - Python     (1.87%)
                   - Rust       (0.07%)
@@ -37,14 +37,14 @@ module.exports = {
           value: `- Followers:    10
                   - Total Repos:  26
                   - Stars:        12
-                  - Commits:      853`,
+                  - Commits:      855`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 5.8k+ servers / 548.5k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 5.8k+ servers / 551.1k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 33 servers / 76.4k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 33 servers / 76.5k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
@@ -67,7 +67,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 0 visits / 0 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 1.1k+ visits / 5.9k+ "ungay" clicks
                   - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
