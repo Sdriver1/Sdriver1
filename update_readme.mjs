@@ -379,7 +379,8 @@ module.exports = {
         {
           name: \`Project\`,
           value: \`- Center.chat - *coming soon*
-                  - DevEco - discord.gg/deveco\`,
+                  - DevEco - discord.gg/deveco
+                  - Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)\`,
         },
         {
           name: \`Websites\`,
