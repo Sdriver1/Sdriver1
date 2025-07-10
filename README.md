@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (45.78%)
-                  - HTML       (26.46%)
-                  - TypeScript (10.79%)
-                  - Perl       (7.91%)
-                  - CSS        (4.30%)
-                  - Java       (2.79%)
-                  - Python     (1.88%)
+          value: `- JavaScript (45.64%)
+                  - HTML       (26.38%)
+                  - TypeScript (10.76%)
+                  - Perl       (7.89%)
+                  - CSS        (4.28%)
+                  - Java       (3.07%)
+                  - Python     (1.87%)
                   - Rust       (0.07%)
                   - Shell      (0.04%)`,
         },
@@ -37,12 +37,12 @@ module.exports = {
           value: `- Followers:    10
                   - Total Repos:  26
                   - Stars:        12
-                  - Commits:      857`,
+                  - Commits:      860`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 6.3k+ servers / 588.7k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 6.3k+ servers / 590.3k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 32 servers / 76.3k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
@@ -54,7 +54,8 @@ module.exports = {
         {
           name: `Project`,
           value: `- Center.chat - *coming soon*
-                  - DevEco - discord.gg/deveco`,
+                  - DevEco - discord.gg/deveco
+                  - Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)`,
         },
         {
           name: `Websites`,
