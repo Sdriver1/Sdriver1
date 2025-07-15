@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (44.87%)
-                  - HTML       (26.09%)
-                  - TypeScript (10.57%)
-                  - Perl       (7.75%)
-                  - Java       (4.56%)
-                  - CSS        (4.21%)
-                  - Python     (1.84%)
+          value: `- JavaScript (44.73%)
+                  - HTML       (26.02%)
+                  - TypeScript (10.54%)
+                  - Perl       (7.73%)
+                  - Java       (4.84%)
+                  - CSS        (4.20%)
+                  - Python     (1.83%)
                   - Rust       (0.07%)
                   - Shell      (0.04%)`,
         },
@@ -37,18 +37,18 @@ module.exports = {
           value: `- Followers:    10
                   - Total Repos:  27
                   - Stars:        12
-                  - Commits:      885`,
+                  - Commits:      887`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 6.4k+ servers / 602.1k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 6.5k+ servers / 605.1k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 33 servers / 76.7k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 33 servers / 76.8k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 356 members
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 358 members
                   - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 0 members (Offline)`,
         },
         {
