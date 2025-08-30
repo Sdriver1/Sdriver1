@@ -22,13 +22,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (44.20%)
-                  - HTML       (26.20%)
-                  - TypeScript (10.40%)
-                  - Perl       (7.62%)
-                  - CSS        (4.90%)
-                  - Java       (4.77%)
-                  - Python     (1.81%)
+          value: `- JavaScript (44.39%)
+                  - HTML       (26.11%)
+                  - TypeScript (10.36%)
+                  - Perl       (7.60%)
+                  - CSS        (4.88%)
+                  - Java       (4.76%)
+                  - Python     (1.80%)
                   - Rust       (0.06%)
                   - Shell      (0.04%)`,
         },
@@ -37,18 +37,18 @@ module.exports = {
           value: `- Followers:    12
                   - Total Repos:  27
                   - Stars:        12
-                  - Commits:      895`,
+                  - Commits:      896`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.0k+ servers / 679.7k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.0k+ servers / 685.5k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 34 servers / 78.7k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 350 members
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 347 members
                   - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 0 members (Offline)`,
         },
         {
