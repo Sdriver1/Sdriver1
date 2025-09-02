@@ -42,13 +42,13 @@ module.exports = {
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.1k+ servers / 686.5k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.1k+ servers / 689.6k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 34 servers / 78.8k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 347 members
+                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 346 members
                   - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 0 members (Offline)`,
         },
         {
