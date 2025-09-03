@@ -17,34 +17,33 @@ module.exports = {
           value: `- 18 years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (21 months)
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (41.84%)
-                  - HTML       (30.14%)
-                  - TypeScript (9.75%)
-                  - Perl       (7.15%)
-                  - CSS        (4.60%)
-                  - Java       (4.48%)
-                  - Python     (1.95%)
+          value: `- JavaScript (41.94%)
+                  - HTML       (30.22%)
+                  - TypeScript (9.78%)
+                  - Perl       (7.17%)
+                  - CSS        (4.61%)
+                  - Java       (4.49%)
+                  - Python     (1.70%)
                   - Rust       (0.06%)
                   - Shell      (0.04%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    12
-                  - Total Repos:  28
+                  - Total Repos:  27
                   - Stars:        12
-                  - Commits:      909`,
+                  - Commits:      905`,
         },
         {
           name: `Bot Development`,
           value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.1k+ servers / 690.1k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.1k+ servers / 690.2k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 34 servers / 78.8k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 34 servers / 78.9k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
                   
                   // TypeScript
@@ -69,7 +68,6 @@ module.exports = {
                   
                   // Fun Websites
                   - https://youarenow.gay - Turn you and your friends gay | 1.4k+ visits / 5.9k+ "ungay" clicks
-                  - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
                   - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
