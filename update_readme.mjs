@@ -272,20 +272,22 @@ function calculateAge(birthday) {
   return age;
 }
 
-function calculateMonthsTogether(anniversary) {
-  const today = new Date();
-  const anniversaryDate = new Date(anniversary);
-  let months =
-    (today.getFullYear() - anniversaryDate.getFullYear()) * 12 +
-    today.getMonth() -
-    anniversaryDate.getMonth();
+// function calculateMonthsTogether(anniversary) {
+//   const today = new Date();
+//   const anniversaryDate = new Date(anniversary);
+//   let months =
+//     (today.getFullYear() - anniversaryDate.getFullYear()) * 12 +
+//     today.getMonth() -
+//     anniversaryDate.getMonth();
 
-  if (today.getDate() < anniversaryDate.getDate()) {
-    months--;
-  }
+//   if (today.getDate() < anniversaryDate.getDate()) {
+//     months--;
+//   }
 
-  return months;
-}
+//   return months;
+// }
+
+// - Taken 💖 ~ 11/04/23 (${monthsTogether} months)
 
 async function getYANGstats() {
   let stats = { visits: 0, clicks: 0 };
@@ -350,7 +352,6 @@ module.exports = {
           value: \`- ${age} years old
                   - Male, He/Him 
                   - Pansexual, Omniromantic
-                  - Taken 💖 ~ 11/04/23 (${monthsTogether} months)
                   - Software Developer Intern @ devEco Consulting\`,
         },
         {
@@ -394,7 +395,6 @@ module.exports = {
                   
                   // Fun Websites
                   - https://youarenow.gay - Turn you and your friends gay | ${yang.visits} visits / ${yang.clicks} "ungay" clicks
-                  - https://sdriver1.me/calculator - Small graphing calculator with easy to use UI
 
                   // Help Contributed too
                   - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
