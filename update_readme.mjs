@@ -320,7 +320,7 @@ function formatUserCount(count) {
 async function updateReadme() {
   const username = "Sdriver1";
   const age = calculateAge("2007-08-04");
-  const monthsTogether = calculateMonthsTogether("2023-11-04");
+  // const monthsTogether = calculateMonthsTogether("2023-11-04");
 
   const [languages, stats, botStats, yang] = await Promise.all([
     getLanguageStats(username),
