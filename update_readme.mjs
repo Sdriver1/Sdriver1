@@ -314,52 +314,58 @@ async function updateBotStats(languages, stats, botStats, yang, age) {
         age: age,
         pronouns: "He/Him",
         sexuality: "Pansexual, Omniromantic",
-        job: "Software Developer Intern @ devEco Consulting"
+        job: "Software Developer Intern @ devEco Consulting",
       },
       languages: {},
       github: {
         followers: stats.followers,
         totalRepos: stats.total_repos,
         stars: stats.stars,
-        commits: stats.commits
+        commits: stats.commits,
       },
       bots: {
         pridebot: {
-          servers: parseInt(botStats.currentGuildCount.replace(/[k+,]/g, '')) * (botStats.currentGuildCount.includes('k') ? 1000 : 1),
-          users: parseInt(botStats.totalUserCount.replace(/[k+,]/g, '')) * (botStats.totalUserCount.includes('k') ? 1000 : 1)
+          servers: formatUserCount(botStats.currentGuildCount),
+          users: formatUserCount(botStats.totalUserCount),
         },
         portalbot: {
-          servers: parseInt(botStats.portalGuildCount.replace(/[k+,]/g, '')) * (botStats.portalGuildCount.includes('k') ? 1000 : 1),
-          users: parseInt(botStats.portalUserCount.replace(/[k+,]/g, '')) * (botStats.portalUserCount.includes('k') ? 1000 : 1)
-        }
+          servers: formatUserCount(botStats.portalGuildCount),
+          users: formatUserCount(botStats.portalUserCount),
+        },
       },
       websites: {
         youarenowgay: {
-          visits: parseInt(yang.visits.replace(/[k+,]/g, '')) * (yang.visits.includes('k') ? 1000 : 1),
-          ungayClicks: parseInt(yang.clicks.replace(/[k+,]/g, '')) * (yang.clicks.includes('k') ? 1000 : 1)
-        }
-      }
+          visits: formatUserCount(yang.visits),
+          ungayClicks: formatUserCount(yang.clicks),
+        },
+      },
     };
 
     // Convert languages array to object
-    languages.forEach(lang => {
+    languages.forEach((lang) => {
       botStatsUpdate.languages[lang.language] = parseFloat(lang.percentage);
     });
 
     console.log("[BOT UPDATE] Sending stats to Discord bot...");
-    
-    const response = await fetch("https://sbot1.api.sdriver1.me/update-driver-stats", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.BOT_UPDATE_TOKEN}`
-      },
-      body: JSON.stringify(botStatsUpdate)
-    });
+
+    const response = await fetch(
+      "https://sbot1.api.sdriver1.me/update-driver-stats",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${process.env.BOT_UPDATE_TOKEN}`,
+        },
+        body: JSON.stringify(botStatsUpdate),
+      }
+    );
 
     if (response.ok) {
       const result = await response.json();
-      console.log("[BOT UPDATE] Successfully updated bot stats:", result.message);
+      console.log(
+        "[BOT UPDATE] Successfully updated bot stats:",
+        result.message
+      );
     } else {
       const error = await response.text();
       console.error("[BOT UPDATE] Failed to update bot stats:", error);
@@ -475,8 +481,6 @@ module.exports = {
 
   fs.writeFileSync("README.md", readmeContent);
   console.log("README.md updated successfully");
-  
-  // Update Discord bot stats
   await updateBotStats(languages, stats, botStats, yang, age);
 }
 
