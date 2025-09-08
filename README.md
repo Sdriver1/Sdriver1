@@ -21,40 +21,35 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (41.52%)
-                  - HTML       (30.92%)
-                  - TypeScript (9.68%)
-                  - Perl       (7.10%)
-                  - CSS        (4.56%)
-                  - Java       (4.45%)
-                  - Python     (1.68%)
+          value: `- JavaScript (43.48%)
+                  - HTML       (27.89%)
+                  - TypeScript (9.78%)
+                  - Perl       (7.17%)
+                  - CSS        (5.42%)
+                  - Java       (4.49%)
+                  - Python     (1.66%)
                   - Rust       (0.06%)
-                  - Shell      (0.03%)`,
+                  - Shell      (0.04%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    12
                   - Total Repos:  27
                   - Stars:        12
-                  - Commits:      910`,
+                  - Commits:      914`,
         },
         {
           name: `Bot Development`,
-          value: ` // JavaScript
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.2k+ servers / 686.1k+ users
+          value: `
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.2k+ servers / 686.5k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 34 servers / 79.0k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
-                  
-                  // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / 346 members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / 0 members (Offline)`,
         },
         {
-          name: `Project`,
-          value: `- Center.chat - *coming soon*
-                  - DevEco - discord.gg/deveco
-                  - Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)`,
+          name: `MC Project`,
+          value: `- Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)
+                  - PridebotMC - Custom minecraft plugin for Fabric 1.21+ with favorite pridebot features`,
         },
         {
           name: `Websites`,
@@ -82,7 +77,7 @@ module.exports = {
         },
       ])
       .setColor("#FF00EA") // Favorite color
-      .setThumbnail("https://pfp.pridebot.xyz/691506668781174824/omnisexualpansexual.png")
+      .setThumbnail("https://images.sdriver1.me/profile.png")
       .setTimestamp();
 
     await human.reply({ embeds: [Readme] });
