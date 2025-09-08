@@ -21,8 +21,8 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (43.55%)
-                  - HTML       (27.86%)
+          value: `- JavaScript (43.54%)
+                  - HTML       (27.87%)
                   - TypeScript (9.77%)
                   - Perl       (7.16%)
                   - CSS        (5.42%)
