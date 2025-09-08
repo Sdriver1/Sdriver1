@@ -307,6 +307,68 @@ async function getYANGstats() {
   return stats;
 }
 
+async function updateBotStats(languages, stats, botStats, yang, age) {
+  try {
+    const botStatsUpdate = {
+      personal: {
+        age: age,
+        pronouns: "He/Him",
+        sexuality: "Pansexual, Omniromantic",
+        job: "Software Developer Intern @ devEco Consulting"
+      },
+      languages: {},
+      github: {
+        followers: stats.followers,
+        totalRepos: stats.total_repos,
+        stars: stats.stars,
+        commits: stats.commits
+      },
+      bots: {
+        pridebot: {
+          servers: parseInt(botStats.currentGuildCount.replace(/[k+,]/g, '')) * (botStats.currentGuildCount.includes('k') ? 1000 : 1),
+          users: parseInt(botStats.totalUserCount.replace(/[k+,]/g, '')) * (botStats.totalUserCount.includes('k') ? 1000 : 1)
+        },
+        portalbot: {
+          servers: parseInt(botStats.portalGuildCount.replace(/[k+,]/g, '')) * (botStats.portalGuildCount.includes('k') ? 1000 : 1),
+          users: parseInt(botStats.portalUserCount.replace(/[k+,]/g, '')) * (botStats.portalUserCount.includes('k') ? 1000 : 1)
+        }
+      },
+      websites: {
+        youarenowgay: {
+          visits: parseInt(yang.visits.replace(/[k+,]/g, '')) * (yang.visits.includes('k') ? 1000 : 1),
+          ungayClicks: parseInt(yang.clicks.replace(/[k+,]/g, '')) * (yang.clicks.includes('k') ? 1000 : 1)
+        }
+      }
+    };
+
+    // Convert languages array to object
+    languages.forEach(lang => {
+      botStatsUpdate.languages[lang.language] = parseFloat(lang.percentage);
+    });
+
+    console.log("[BOT UPDATE] Sending stats to Discord bot...");
+    
+    const response = await fetch("https://sbot1.api.sdriver1.me/update-driver-stats", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${process.env.BOT_UPDATE_TOKEN}`
+      },
+      body: JSON.stringify(botStatsUpdate)
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      console.log("[BOT UPDATE] Successfully updated bot stats:", result.message);
+    } else {
+      const error = await response.text();
+      console.error("[BOT UPDATE] Failed to update bot stats:", error);
+    }
+  } catch (error) {
+    console.error("[BOT UPDATE] Error updating bot stats:", error.message);
+  }
+}
+
 function formatUserCount(count) {
   return count >= 1000
     ? (count / 1000).toFixed(1) + "k+"
@@ -413,6 +475,9 @@ module.exports = {
 
   fs.writeFileSync("README.md", readmeContent);
   console.log("README.md updated successfully");
+  
+  // Update Discord bot stats
+  await updateBotStats(languages, stats, botStats, yang, age);
 }
 
 updateReadme().catch((error) => console.error("Error in updateReadme:", error));
