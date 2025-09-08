@@ -223,8 +223,6 @@ async function getBotStats() {
   let stats = {
     currentGuildCount: 0,
     totalUserCount: 0,
-    prismatotal: 0,
-    obbytotal: 0,
     portalGuildCount: 0,
     portalUserCount: 0,
   };
@@ -235,8 +233,6 @@ async function getBotStats() {
     Object.assign(stats, {
       currentGuildCount: formatUserCount(data.currentGuildCount),
       totalUserCount: formatUserCount(data.totalUserCount),
-      prismatotal: formatUserCount(data.prismatotal),
-      obbytotal: formatUserCount(data.obbytotal),
     });
   } catch (error) {
     console.error("Error fetching Pridebot stats:", error);
@@ -367,21 +363,16 @@ module.exports = {
         },
         {
           name: \`Bot Development\`,
-          value: \` // JavaScript
+          value: \`
                   - Pridebot - Your Discord bot to LGBTQ Identities | ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | ${botStats.portalGuildCount} servers / ${botStats.portalUserCount} users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)
-                  
-                  // TypeScript
-                  - Prisma Bot - Main bot for Prismatic Discord Server (.gg/friendship) / ${botStats.prismatotal} members
-                  - Economy Bot - Economy/Shop bot designed for Obby Street (.gg/xxs) / ${botStats.obbytotal} members (Offline)\`,
         },
         {
-          name: \`Project\`,
-          value: \`- Center.chat - *coming soon*
-                  - DevEco - discord.gg/deveco
-                  - Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)\`,
+          name: \`MC Project\`,
+          value: \`- Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)
+                  - PridebotMC - Custom minecraft plugin for Fabric 1.21+ with favorite pridebot features\`,
         },
         {
           name: \`Websites\`,
@@ -409,7 +400,7 @@ module.exports = {
         },
       ])
       .setColor("#FF00EA") // Favorite color
-      .setThumbnail("https://pfp.pridebot.xyz/691506668781174824/omnisexualpansexual.png")
+      .setThumbnail("https://images.sdriver1.me/profile.png")
       .setTimestamp();
 
     await human.reply({ embeds: [Readme] });
