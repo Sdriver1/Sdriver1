@@ -33,7 +33,7 @@ module.exports = {
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    12
+          value: `- Followers:    13
                   - Total Repos:  27
                   - Stars:        12
                   - Commits:      920`,
@@ -41,7 +41,7 @@ module.exports = {
         {
           name: `Bot Development`,
           value: `
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.4k+ servers / 695.6k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 8.4k+ servers / 695.5k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 34 servers / 79.3k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)`,
@@ -62,7 +62,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 1.4k+ visits / 5.9k+ "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay | 1.4k+ visits / 6.0k+ "ungay" clicks
 
                   // Help Contributed too
                   - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
