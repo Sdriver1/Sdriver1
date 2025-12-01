@@ -35,15 +35,15 @@ module.exports = {
           name: `GitHub Stats`,
           value: `- Followers:    16
                   - Total Repos:  28
-                  - Stars:        14
+                  - Stars:        15
                   - Commits:      947`,
         },
         {
           name: `Bot Development`,
           value: `
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 10.1k+ servers / 758.3k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 10.2k+ servers / 759.2k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 41 servers / 93.9k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 41 servers / 94.0k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)`,
         },
         {
