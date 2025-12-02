@@ -21,13 +21,13 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (45.55%)
-                  - HTML       (27.07%)
-                  - TypeScript (8.99%)
-                  - Perl       (6.59%)
-                  - CSS        (6.07%)
-                  - Java       (4.13%)
-                  - Python     (1.53%)
+          value: `- JavaScript (45.23%)
+                  - HTML       (27.56%)
+                  - TypeScript (8.93%)
+                  - Perl       (6.54%)
+                  - CSS        (6.03%)
+                  - Java       (4.10%)
+                  - Python     (1.52%)
                   - Rust       (0.06%)
                   - Shell      (0.03%)`,
         },
@@ -36,14 +36,14 @@ module.exports = {
           value: `- Followers:    16
                   - Total Repos:  28
                   - Stars:        15
-                  - Commits:      953`,
+                  - Commits:      962`,
         },
         {
           name: `Bot Development`,
           value: `
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 10.2k+ servers / 761.2k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 10.2k+ servers / 762.1k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PortalBot - Network/Chat bot for PortalBot network | 41 servers / 94.1k+ users
+                  - PortalBot - Network/Chat bot for PortalBot network | 41 servers / 94.2k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)`,
         },
         {
@@ -62,7 +62,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | 0 visits / 0 "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay
 
                   // Help Contributed too
                   - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
