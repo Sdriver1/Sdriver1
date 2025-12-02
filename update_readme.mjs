@@ -311,12 +311,6 @@ async function updateBotStats(languages, stats, botStats, yang, age) {
           users: formatUserCount(botStats.portalUserCount),
         },
       },
-      websites: {
-        youarenowgay: {
-          visits: formatUserCount(yang.visits),
-          ungayClicks: formatUserCount(yang.clicks),
-        },
-      },
     };
 
     // Convert languages array to object
