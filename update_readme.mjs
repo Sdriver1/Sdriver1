@@ -285,28 +285,6 @@ function calculateAge(birthday) {
 
 // - Taken 💖 ~ 11/04/23 (${monthsTogether} months)
 
-async function getYANGstats() {
-  let stats = { visits: 0, clicks: 0 };
-
-  try {
-    const vresponse = await fetch("https://youarenow.gay/api/visits");
-    const vdata = await vresponse.json();
-    stats.visits = formatUserCount(vdata.visits);
-  } catch (error) {
-    console.error("Error fetching YANG visits:", error);
-  }
-
-  try {
-    const cresponse = await fetch("https://youarenow.gay/api/clicks");
-    const cdata = await cresponse.json();
-    stats.clicks = formatUserCount(cdata.clicks);
-  } catch (error) {
-    console.error("Error fetching YANG clicks:", error);
-  }
-
-  return stats;
-}
-
 async function updateBotStats(languages, stats, botStats, yang, age) {
   try {
     const botStatsUpdate = {
@@ -390,7 +368,6 @@ async function updateReadme() {
     getLanguageStats(username),
     getGitHubStats(username),
     getBotStats(),
-    getYANGstats(),
   ]);
 
   const languagesString = languages
@@ -453,7 +430,7 @@ module.exports = {
                   - https://portalnet.work - PortalBot
                   
                   // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay | ${yang.visits} visits / ${yang.clicks} "ungay" clicks
+                  - https://youarenow.gay - Turn you and your friends gay
 
                   // Help Contributed too
                   - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
