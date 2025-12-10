@@ -41,7 +41,7 @@ module.exports = {
         {
           name: `Bot Development`,
           value: `
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 10.3k+ servers / 767.0k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 10.3k+ servers / 767.4k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PortalBot - Network/Chat bot for PortalBot network | 41 servers / 94.4k+ users
                   - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)`,
