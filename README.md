@@ -34,15 +34,15 @@ module.exports = {
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    0
-                  - Total Repos:  21
+          value: `- Followers:    20
+                  - Total Repos:  34
                   - Stars:        29
                   - Commits:      1084`,
         },
         {
           name: `Bot Development`,
           value: `
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 13.6k+ servers / 1132.0k+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 13.6k+ servers / 1133.0k+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
                   - PortalBot - Network/Chat bot for PortalBot network | 0 servers / 0 users
