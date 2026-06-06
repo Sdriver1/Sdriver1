@@ -8,7 +8,7 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-const commitExcludeRepos = ["Pridebot-Systems/.github", "Sdriver1/Pridebot"];
+const commitExcludeRepos = ["Pridebot-Systems/.github", "Sdriver1/Pridebot", "Sdriver1/doot-games"];
 
 async function getRepositories(username, orgs = []) {
   let repos = [];
@@ -81,7 +81,8 @@ async function getLanguageStats(username) {
     if (
       (!repo.permissions.admin && !repo.permissions.push) ||
       (repo.owner.login === "Sdriver1" &&
-        repo.name === "consulting.thedeveco.com")
+        repo.name === "consulting.thedeveco.com") ||
+      commitExcludeRepos.includes(repo.full_name)
     ) {
       console.log(
         `[LANGUAGES] Skipping repo: ${repo.full_name} (No push/admin or blacklisted)`
