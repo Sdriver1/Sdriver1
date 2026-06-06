@@ -16,40 +16,44 @@ module.exports = {
           name: `Who is Driver`,
           value: `- 18 years old
                   - Male, He/Him 
-                  - Pansexual, Omniromantic
+                  - Founder @ Pridebot Systems
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (47.77%)
-                  - HTML       (26.23%)
-                  - TypeScript (9.05%)
-                  - CSS        (7.56%)
-                  - Perl       (5.08%)
-                  - Java       (2.78%)
-                  - Python     (1.42%)
-                  - Rust       (0.04%)
-                  - Nix        (0.04%)
-                  - Shell      (0.03%)`,
+          value: `- JavaScript (30.77%)
+                  - TypeScript (25.04%)
+                  - HTML       (17.84%)
+                  - Vue        (15.84%)
+                  - CSS        (5.05%)
+                  - Perl       (2.93%)
+                  - Java       (1.60%)
+                  - Python     (0.82%)
+                  - Dockerfile (0.05%)
+                  - Shell      (0.02%)
+                  - Rust       (0.02%)
+                  - Nix        (0.02%)`,
         },
         {
           name: `GitHub Stats`,
           value: `- Followers:    21
-                  - Total Repos:  34
+                  - Total Repos:  35
                   - Stars:        31
-                  - Commits:      1094`,
+                  - Commits:      1363`,
         },
         {
           name: `Bot Development`,
-          value: `
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 15.2k+ servers / 1224.4k+ users
+          value: `// Bots I have developed
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 15.2k+ servers / 1.2M+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
+                  - PridebotOSM - Fork of Pridebot for [Osmium](https://osmium.chat/)
                   - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
-                  - PortalBot - Network/Chat bot for PortalBot network | 0 servers / 0 users
-                  - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)`,
+
+                  // Bots I have contributed to
+                  - PortalBot - Network/Chat bot for PortalBot network`,
         },
         {
-          name: `MC Project`,
+          name: `Minecraft Projects`,
           value: `- Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)
                   - PridebotMC - Custom minecraft plugin for Fabric 1.21+ with favorite pridebot features`,
         },
@@ -69,6 +73,11 @@ module.exports = {
                   // Help Contributed too
                   - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
                   `,
+        },
+        {
+          name: `Other Projects`,
+          value: `// Google Extensions
+                  - NY Times Spelling Bee Solver - A tool to help solve the NY Times Spelling Bee puzzle`,
         },
         {
           name: `Socials`,
