@@ -348,9 +348,11 @@ async function updateBotStats(languages, stats, botStats, yang, age) {
 }
 
 function formatUserCount(count) {
-  return count >= 1000
-    ? (count / 1000).toFixed(1) + "k+"
-    : count.toLocaleString();
+  if (count >= 1000000) {
+    return (count / 1000000).toFixed(1) + "M+";
+  } else if (count >= 1000) {
+    return (count / 1000).toFixed(1) + "k+";
+  }
 }
 
 async function updateReadme() {
@@ -386,7 +388,7 @@ module.exports = {
           name: \`Who is Driver\`,
           value: \`- ${age} years old
                   - Male, He/Him 
-                  - Pansexual, Omniromantic
+                  - Founder @ Pridebot Systems
                   - Software Developer Intern @ devEco Consulting\`,
         },
         {
@@ -402,15 +404,17 @@ module.exports = {
         },
         {
           name: \`Bot Development\`,
-          value: \`
+          value: \`// Bots I have developed
                   - Pridebot - Your Discord bot to LGBTQ Identities | ${botStats.currentGuildCount} servers / ${botStats.totalUserCount} users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
+                  - PridebotOSM - Fork of Pridebot for [Osmium](https://osmium.chat/)
                   - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
-                  - PortalBot - Network/Chat bot for PortalBot network | ${botStats.portalGuildCount} servers / ${botStats.portalUserCount} users
-                  - AntiForward - Discord bot designed to keep forwarded messages out of your server (Offline)\`,
+
+                  // Bots I have contributed to
+                  - PortalBot - Network/Chat bot for PortalBot network\`,
         },
         {
-          name: \`MC Project\`,
+          name: \`Minecraft Projects\`,
           value: \`- Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)
                   - PridebotMC - Custom minecraft plugin for Fabric 1.21+ with favorite pridebot features\`,
         },
@@ -430,6 +434,11 @@ module.exports = {
                   // Help Contributed too
                   - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
                   \`,
+        },
+        {
+          name: \`Other Projects\`,
+          value: \`// Google Extensions
+                  - NY Times Spelling Bee Solver - A tool to help solve the NY Times Spelling Bee puzzle\`,
         },
         {
           name: \`Socials\`,
