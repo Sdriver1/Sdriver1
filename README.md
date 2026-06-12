@@ -21,28 +21,28 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (42.34%)
-                  - HTML       (28.37%)
-                  - TypeScript (10.08%)
-                  - CSS        (8.76%)
-                  - Perl       (5.66%)
-                  - Java       (3.09%)
-                  - Python     (1.58%)
+          value: `- JavaScript (42.95%)
+                  - HTML       (28.15%)
+                  - TypeScript (9.94%)
+                  - CSS        (8.65%)
+                  - Perl       (5.58%)
+                  - Java       (3.05%)
+                  - Python     (1.56%)
                   - Rust       (0.05%)
                   - Nix        (0.04%)
                   - Shell      (0.03%)`,
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    0
-                  - Total Repos:  21
+          value: `- Followers:    23
+                  - Total Repos:  35
                   - Stars:        31
-                  - Commits:      1101`,
+                  - Commits:      1110`,
         },
         {
           name: `Bot Development`,
           value: `// Bots I have developed
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 15.4k+ servers / 1.3M+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 15.5k+ servers / 1.3M+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PridebotOSM - Fork of Pridebot for [Osmium](https://osmium.chat/)
                   - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
