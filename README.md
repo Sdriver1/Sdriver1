@@ -34,15 +34,15 @@ module.exports = {
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    23
-                  - Total Repos:  35
+          value: `- Followers:    0
+                  - Total Repos:  21
                   - Stars:        31
                   - Commits:      1113`,
         },
         {
           name: `Bot Development`,
           value: `// Bots I have developed
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 15.9k+ servers / 1.3M+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 16.0k+ servers / 1.3M+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PridebotOSM - Fork of Pridebot for [Osmium](https://osmium.chat/)
                   - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
