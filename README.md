@@ -14,20 +14,20 @@ module.exports = {
       .setFields([
         {
           name: `Who is Driver`,
-          value: `- 18 years old
+          value: `- 19 years old
                   - Male, He/Him 
                   - Founder @ Pridebot Systems
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (53.18%)
-                  - HTML       (23.09%)
-                  - TypeScript (8.16%)
-                  - CSS        (7.10%)
-                  - Perl       (4.58%)
-                  - Java       (2.50%)
-                  - Python     (1.28%)
+          value: `- JavaScript (53.08%)
+                  - HTML       (23.14%)
+                  - TypeScript (8.18%)
+                  - CSS        (7.11%)
+                  - Perl       (4.59%)
+                  - Java       (2.51%)
+                  - Python     (1.29%)
                   - Rust       (0.04%)
                   - Nix        (0.04%)
                   - Shell      (0.02%)`,
@@ -37,12 +37,12 @@ module.exports = {
           value: `- Followers:    26
                   - Total Repos:  35
                   - Stars:        23
-                  - Commits:      1150`,
+                  - Commits:      1151`,
         },
         {
           name: `Bot Development`,
           value: `// Bots I have developed
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 17.3k+ servers / 1.2M+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 17.4k+ servers / 1.2M+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PridebotOSM - Fork of Pridebot for [Osmium](https://osmium.chat/)
                   - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
