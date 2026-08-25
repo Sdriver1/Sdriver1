@@ -1,98 +1,56 @@
+<div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF00EA,50:8B5CF6,100:4F46E5&height=200&section=header&text=Hey,%20I'm%20Driver%20%F0%9F%91%8B&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=40" alt="Steven Driver banner" width="100%"/> <a href="https://readme-typing-svg.demolab.com"> <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=FF00EA&center=true&vCenter=true&width=650&lines=Founder+%40+Pridebot-Systems;Front-End+Dev+%40+Center;SWE+Intern+%40+devEco;Computer+Science+%40+RIT;Building+tools+that+help+people+be+themselves." alt="Typing SVG" /> </a>
 
-```javascript
-const { ReadmeBuilder, ReadmeContentBuilder } = require("Github.js");
+<i>Steven "Sdriver1" Driver — New York, USA</i>
 
-module.exports = {
-  data: new ReadmeContentBuilder()
-    .setName("whoisdriver")
-    .setDescription("Info on Sdriver1"),
+<p align="center"> <a href="#-about-driver">About</a> • <a href="#-organizations">Orgs</a> • <a href="#%EF%B8%8F-tech-stack">Stack</a> • <a href="#-github-analytics">Stats</a> • <a href="#-featured-projects">Projects</a> • <a href="#-lets-connect">Connect</a> </p> <p align="center"> <img src="https://img.shields.io/github/followers/Sdriver1?style=for-the-badge&logo=github&color=FF00EA&labelColor=1a1b27&label=Followers" alt="Followers"/> <a href="https://sdriver1.me"><img src="https://img.shields.io/badge/Portfolio-sdriver1.me-FF00EA?style=for-the-badge&logo=firefoxbrowser&logoColor=white&labelColor=1a1b27" alt="Portfolio"/></a> <img src="https://img.shields.io/badge/Location-New%20York%2C%20USA-4F46E5?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=1a1b27" alt="Location"/> <a href="https://sdriver1.me/tech_resume"><img src="https://img.shields.io/badge/Resume-Download-8B5CF6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&labelColor=1a1b27" alt="Resume"/></a> </p> <p align="center"> <a href="https://github.com/Pridebot-Systems"><img src="https://img.shields.io/badge/Founder-Pridebot%20Systems-FF00EA?style=flat-square&logo=discord&logoColor=white" alt="Founder @ Pridebot Systems"/></a> <a href="https://github.com/centerchat"><img src="https://img.shields.io/badge/Front--End%20Dev-Center-8B5CF6?style=flat-square&logo=googlechrome&logoColor=white" alt="Front-End Dev @ Center"/></a> <a href="https://github.com/thedeveco"><img src="https://img.shields.io/badge/SWE%20Intern-devEco-4F46E5?style=flat-square&logo=htmlacademy&logoColor=white" alt="SWE Intern @ devEco"/></a> </p> </div> <br/>
+⚡ About Driver
+🎓 18, He/Him — studying Computer Science at RIT, with 3+ years of programming behind him
+🏳️‍🌈 Founder & lead developer of Pridebot — a multi-function LGBTQIA+ themed Discord bot in 18K+ servers, reaching 1.2M+ users
+🧪 Software Developer Intern at devEco™, and Front-End developer on Center — the team building center.chat
+🏊 Off-keyboard he's a Water Safety Instructor & lifeguard, WSI + CPR/AED certified, teaching swim lessons on the side
+🗣️ Primary stack: JavaScript / Discord.js / Node.js, with Python, Java, and a soft spot for Minecraft plugin dev
+💬 Ask him about Discord bot architecture, community products, or turning a side project into 1M+ users
+<br/>
+🧩 Organizations
+<table> <tr> <th align="center" width="90"></th> <th align="left">Organization</th> <th align="left">Role</th> <th align="left">About</th> </tr> <tr> <td align="center"><img src="https://avatars.githubusercontent.com/u/57915841?v=4" width="56" alt="devEco logo"/></td> <td><a href="https://github.com/thedeveco"><b>devEco™</b></a></td> <td>Software Developer Intern<br/>Admin & Core Member</td> <td>A technical ecosystem of communities and open-source projects — built by developers, for developers.</td> </tr> <tr> <td align="center"><img src="https://avatars.githubusercontent.com/u/180351064?v=4" width="56" alt="Center logo"/></td> <td><a href="https://github.com/centerchat"><b>Center</b></a></td> <td>Front-End Developer</td> <td>The devs behind <b>center.chat</b> — a new chat platform, coming soon.</td> </tr> <tr> <td align="center"><img src="https://avatars.githubusercontent.com/u/195158095?v=4" width="56" alt="Pridebot Systems logo"/></td> <td><a href="https://github.com/Pridebot-Systems"><b>Pridebot Systems</b></a></td> <td>Founder</td> <td>Home of <b>Pridebot</b>, a multi-functional LGBTQIA+ themed Discord bot — verified owner of <code>pridebot.xyz</code>.</td> </tr> </table> <br/>
+🛠️ Tech Stack
+<p align="center"> <b>Languages</b><br/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="42" title="JavaScript"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="42" title="TypeScript"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="42" title="Python"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="42" title="Java"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="42" title="HTML5"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="42" title="CSS3"/> </p> <p align="center"> <b>Frameworks & Libraries</b><br/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" width="42" title="Discord.js"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="42" title="Express.js"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="42" title="Node.js"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="42" title="React"/> </p> <p align="center"> <b>Data & Tools</b><br/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="42" title="MongoDB"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="42" title="SQLite"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" width="42" title="Prisma"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="42" title="Git"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="42" title="Maven"/> </p> <br/>
+📊 GitHub Analytics
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Sdriver1&show_icons=true&theme=radical&hide_border=true&count_private=false&bg_color=0D1117" alt="Driver's GitHub stats" height="165"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sdriver1&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top languages" height="165"/> </p> <p align="center"> <img src="https://streak-stats.demolab.com/?user=Sdriver1&theme=radical&hide_border=true&background=0D1117" alt="GitHub streak"/> </p> <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=Sdriver1&theme=radical&no-frame=true&row=1&column=6&margin-w=8" alt="Trophies"/> </p> <p align="center"><sub>These update themselves — commits, stars, and streaks refresh live every time this page loads.</sub></p> <br/>
+🎖️ Achievements
+<p align="center"> <a href="https://github.com/Sdriver1?tab=achievements"><img src="https://github.githubassets.com/assets/quickdraw-default--light-8f798b35341a.png" width="90" alt="Quickdraw"/></a> <a href="https://github.com/Sdriver1?tab=achievements"><img src="https://github.githubassets.com/assets/public-sponsor-default-9fa68986b057.png" width="90" alt="Public Sponsor"/></a> <a href="https://github.com/Sdriver1?tab=achievements"><img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="90" alt="Pull Shark"/></a> </p> <p align="center"><sub><b>Quickdraw</b> · <b>Public Sponsor</b> · <b>Pull Shark</b> — plus <b>GitHub Pro</b> & <b>Developer Program Member</b></sub></p> <br/>
+🚀 Featured Projects
+<details open> <summary><b>🤖 Discord Bots</b></summary> <br/>
+Project	Description	Stack	Links
+Pridebot	Flagship bot — explore LGBTQIA+ terms, resources, and identity tools. 18K+ servers · 1.2M+ users	JS · Discord.js · Express · Node · MongoDB	Site · Repo
+Pridebot Manager	Utility & moderation bot for the Pridebot support server	JS · Python · Discord.js · Prisma	Repo
+AdvancedCounter	Counting bot supporting multiple modes & input validation	JS · Discord.js · Node · Prisma	Site · Repo
+portalBot	Connects communities through "the portal" — network chat bot	JS · Discord.js · Node · MongoDB	Site
+</details> <details> <summary><b>🌐 Websites</b></summary> <br/>
+Project	Description	Stack	Links
+pridebot.xyz	Marketing & docs site for Pridebot	HTML · CSS · JS · Express	Site · Repo
+youarenow.gay	A joke site to prank your friends	HTML · CSS · JS · Express	Site
+sdriver1.me	This portfolio — also lives at stevendriver.com	HTML · CSS · JS	Site
+</details> <details> <summary><b>⛏️ Minecraft Plugins</b></summary> <br/>
+Project	Description	Stack	Links
+PridebotMC	Paper plugin (1.21+) bringing favorite Pridebot features in-game	Java · Maven	Repo · SpigotMC
+Pingbriel	Custom Spigot plugin for the Pridecord server — lets players ping each other in style	Java · Maven	Repo
+</details> <details> <summary><b>🎮 Fun & Twitch Projects</b></summary> <br/>
+Project	Description	Stack	Links
+SdriverBot	Custom chat & moderation bot for his Twitch channel	JS · Node.js	Repo · Twitch
+Spelling Bee Solver	Chrome extension that solves the NYT Spelling Bee puzzle	HTML · JS · Google API	Repo
+Work Rotation Calculator	Little desktop tool that maps out shift rotations	Python · Tkinter	Repo
+Change Counting Helper	Teaches counting change in a fun, interactive way	HTML · CSS · JS	Site
+</details> <br/>
+🌍 Elsewhere on the Web
+Site	What's there
+rit.sdriver1.me	Academic portfolio & coursework from RIT
+games.sdriver1.me	Minesweeper, Sudoku, and 2048 — built to kill time
+youdeservetolive.org	Mental-health resource site made by teens, for teens — Driver contributed to it in memory of Joshua Blackledge
+<br/>
+💬 Let's Connect
+<p align="center"> <a href="https://discord.com/users/691506668781174824"><img src="https://img.shields.io/badge/Discord-sdriver1-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/></a> <a href="https://www.tiktok.com/@sdriver75"><img src="https://img.shields.io/badge/TikTok-%40sdriver75-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok"/></a> <a href="https://www.instagram.com/sdriver_1/"><img src="https://img.shields.io/badge/Instagram-%40sdriver__1-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a> <a href="https://twitch.tv/sdriver1"><img src="https://img.shields.io/badge/Twitch-sdriver1-9146FF?style=for-the-badge&logo=twitch&logoColor=white" alt="Twitch"/></a> <br/> <a href="https://x.com/sdriver_1"><img src="https://img.shields.io/badge/X-%40sdriver__1-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a> <a href="https://www.youtube.com/@sdriver_1"><img src="https://img.shields.io/badge/YouTube-%40sdriver__1-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a> <a href="https://bsky.app/profile/sdriver1.me"><img src="https://img.shields.io/badge/Bluesky-sdriver1.me-0285FF?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky"/></a> <a href="https://sdriver1.me/linkedin"><img src="https://img.shields.io/badge/LinkedIn-Steven%20Driver-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a> </p> <p align="center"><sub>🎧 live Discord presence</sub></p> <p align="center"> <img src="https://lanyard-profile-readme.vercel.app/api/691506668781174824?theme=dark&bg=0D1117&animated=true" alt="Live Discord status"/> </p> <br/> <div align="center"> <img src="https://komarev.com/ghpvc/?username=Sdriver1&label=Profile%20Views&color=FF00EA&style=for-the-badge&base=100" alt="Profile views"/> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:8B5CF6,100:FF00EA&height=120&section=footer" alt="footer" width="100%"/>
 
-  async execute(interaction, client) {
-    const Readme = new ReadmeBuilder()
-      .setTitle(`Hello I am Driver 👋`)
-      .setDescription(`Here are some facts about me`)
-      .setFields([
-        {
-          name: `Who is Driver`,
-          value: `- 19 years old
-                  - Male, He/Him 
-                  - Founder @ Pridebot Systems
-                  - Software Developer Intern @ devEco Consulting`,
-        },
-        {
-          name: `Languages`,
-          value: `- JavaScript (53.08%)
-                  - HTML       (23.14%)
-                  - TypeScript (8.18%)
-                  - CSS        (7.11%)
-                  - Perl       (4.59%)
-                  - Java       (2.51%)
-                  - Python     (1.29%)
-                  - Rust       (0.04%)
-                  - Nix        (0.04%)
-                  - Shell      (0.02%)`,
-        },
-        {
-          name: `GitHub Stats`,
-          value: `- Followers:    26
-                  - Total Repos:  35
-                  - Stars:        23
-                  - Commits:      1157`,
-        },
-        {
-          name: `Bot Development`,
-          value: `// Bots I have developed
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 18.0k+ servers / 1.2M+ users
-                  - Pridebot Manager - A utility bot for Pridebot Support Server
-                  - PridebotOSM - Fork of Pridebot for [Osmium](https://osmium.chat/)
-                  - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
+<i>This README rebuilds itself a little every time you look at it.</i>
 
-                  // Bots I have contributed to
-                  - PortalBot - Network/Chat bot for PortalBot network`,
-        },
-        {
-          name: `Minecraft Projects`,
-          value: `- Pingbriel - Custom minecraft plugin for [Pridecord](https://discord.gg/lgbtqia)
-                  - PridebotMC - Custom minecraft plugin for Fabric 1.21+ with favorite pridebot features`,
-        },
-        {
-          name: `Websites`,
-          value: `// Personal Websites
-                  - https://sdriver1.me
-                  - https://stevendriver.com
-                  
-                  // Bot Websites
-                  - https://pridebot.xyz - Pridebot
-                  - https://portalnet.work - PortalBot
-                  
-                  // Fun Websites
-                  - https://youarenow.gay - Turn you and your friends gay
-
-                  // Help Contributed too
-                  - https://youdeservetolive.org - Mental health site made by teens for teens. In honor of Joshua Blackledge
-                  `,
-        },
-        {
-          name: `Other Projects`,
-          value: `// Google Extensions
-                  - NY Times Spelling Bee Solver - A tool to help solve the NY Times Spelling Bee puzzle`,
-        },
-        {
-          name: `Socials`,
-          value: `- Discord - @sdriver1
-                  - Tiktok - @sdriver75
-                  - Insta - @sdriver_1
-                  - Linkedin - https://sdriver1.me/linkedin`,
-        },
-      ])
-      .setColor("#FF00EA") // Favorite color
-      .setThumbnail("https://images.sdriver1.me/profile.png")
-      .setTimestamp();
-
-    await human.reply({ embeds: [Readme] });
-  },
-};
-```
-
-*This README is updated every day*
-  
+</div>
