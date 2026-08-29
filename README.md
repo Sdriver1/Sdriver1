@@ -34,7 +34,7 @@ module.exports = {
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    26
+          value: `- Followers:    27
                   - Total Repos:  35
                   - Stars:        23
                   - Commits:      1157`,
