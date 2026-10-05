@@ -14,37 +14,35 @@ module.exports = {
       .setFields([
         {
           name: `Who is Driver`,
-          value: `- 18 years old
+          value: `- 19 years old
                   - Male, He/Him 
                   - Founder @ Pridebot Systems
                   - Software Developer Intern @ devEco Consulting`,
         },
         {
           name: `Languages`,
-          value: `- JavaScript (30.77%)
-                  - TypeScript (25.04%)
-                  - HTML       (17.84%)
-                  - Vue        (15.84%)
-                  - CSS        (5.05%)
-                  - Perl       (2.93%)
-                  - Java       (1.60%)
-                  - Python     (0.82%)
-                  - Dockerfile (0.05%)
-                  - Shell      (0.02%)
-                  - Rust       (0.02%)
-                  - Nix        (0.02%)`,
+          value: `- JavaScript (53.56%)
+                  - HTML       (23.30%)
+                  - CSS        (7.69%)
+                  - TypeScript (7.59%)
+                  - Perl       (4.26%)
+                  - Java       (2.33%)
+                  - Python     (1.19%)
+                  - Rust       (0.04%)
+                  - Nix        (0.03%)
+                  - Shell      (0.02%)`,
         },
         {
           name: `GitHub Stats`,
-          value: `- Followers:    21
+          value: `- Followers:    28
                   - Total Repos:  35
-                  - Stars:        31
-                  - Commits:      1363`,
+                  - Stars:        32
+                  - Commits:      1169`,
         },
         {
           name: `Bot Development`,
           value: `// Bots I have developed
-                  - Pridebot - Your Discord bot to LGBTQ Identities | 15.2k+ servers / 1.2M+ users
+                  - Pridebot - Your Discord bot to LGBTQ Identities | 18.7k+ servers / 1.1M+ users
                   - Pridebot Manager - A utility bot for Pridebot Support Server
                   - PridebotOSM - Fork of Pridebot for [Osmium](https://osmium.chat/)
                   - AdvancedCounter - An advanced counting bot supporting multiple counting modes and input validation
