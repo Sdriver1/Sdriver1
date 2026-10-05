@@ -229,7 +229,7 @@ async function getBotStats() {
   };
 
   try {
-    const prideresponse = await fetch("http://2.56.246.53:2610/githubapi");
+    const prideresponse = await fetch("https://api.pridebot.xyz/githubapi");
     const data = await prideresponse.json();
     Object.assign(stats, {
       currentGuildCount: formatUserCount(data.currentGuildCount),
