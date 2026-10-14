@@ -21,10 +21,10 @@ module.exports = {
         },
         {
           name: `Languages`,
-          value: `- JavaScript (55.19%)
-                  - HTML       (22.01%)
-                  - TypeScript (7.77%)
-                  - CSS        (6.96%)
+          value: `- JavaScript (55.24%)
+                  - HTML       (21.99%)
+                  - TypeScript (7.76%)
+                  - CSS        (6.95%)
                   - Perl       (4.36%)
                   - Java       (2.38%)
                   - Python     (1.22%)
@@ -38,7 +38,7 @@ module.exports = {
           value: `- Followers:    28
                   - Total Repos:  35
                   - Stars:        32
-                  - Commits:      1199`,
+                  - Commits:      1201`,
         },
         {
           name: `Bot Development`,
